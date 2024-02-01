@@ -38,12 +38,6 @@ export const NavbarComponent = () => {
             <Navbar.Link linkName="Book A Call" />
             <Button size="md" type="primary">Login</Button>
           </Navbar.Container>
-          <Button size="sm" type="link">
-            <span>
-              <MagnifyingGlass size={20} color="#444" />
-            </span>
-            <span className="ml-2 text-metal-600">Search</span>
-          </Button>
           <Navbar.Toggle />
         </Navbar.Container>
       </Navbar.Container>

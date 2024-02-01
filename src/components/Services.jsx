@@ -10,7 +10,7 @@ function Services() {
       </div>
       <Box
         sx={{
-          padding: " 1rem",
+          padding: "1rem",
           display: "flex",
           flexWrap: "wrap",
           rowGap: "1.2rem",

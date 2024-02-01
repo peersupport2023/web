@@ -3,6 +3,7 @@ import { NavbarComponent } from "./components/NavbarComponent"
 import { CarouselComponent } from "./components/CarouselComponent"
 import About from "./components/About"
 import Services from "./components/Services"
+import ModalExampleContentImage from "./components/RoadToMBA"
 function App() {
 
   return (
@@ -11,6 +12,7 @@ function App() {
      <CarouselComponent/>
      <About/>
      <Services/>
+     <ModalExampleContentImage/>
     </>
   )
 }
