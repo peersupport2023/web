@@ -10,26 +10,22 @@ export const NavbarComponent = () => {
           tag="ul"
           className="lg:flex hidden items-center justify-between gap-8"
         >
-          <Navbar.Link linkName="Home" />
-          <Navbar.Link linkName="Projects" />
-          <Navbar.Link linkName="Blogs" />
+          <Navbar.Link linkName="What We Do" />
+          <Navbar.Link linkName="Road To MBA" />
+          <Navbar.Link linkName="Meet Our Mentors" />
         </Navbar.Container>
         <Navbar.Brand>
-          <img
-            src="/images/favicon_1.png"
-            alt="keep"
-            width="150"
-            height="40"
-          />
+          <img src="/images/favicon_1.png" alt="keep" width="150" height="40" />
         </Navbar.Brand>
 
         <Navbar.Collapse collapseType="sidebar">
           <Navbar.Container tag="ul" className="flex flex-col gap-5">
-            <Navbar.Link linkName="Home" />
-            <Navbar.Link linkName="Projects" />
-            <Navbar.Link linkName="Blogs" />
-            <Navbar.Link linkName="News" />
-            <Navbar.Link linkName="Resources" />
+          <Navbar.Link linkName="What We Do" />
+          <Navbar.Link linkName="Road To MBA" />
+          <Navbar.Link linkName="Meet Our Mentors" />
+          <Navbar.Link linkName="Webinars" />
+          <Navbar.Link linkName="Book A Call" />
+          <Navbar.Link linkName="Login" />
           </Navbar.Container>
         </Navbar.Collapse>
 
@@ -38,8 +34,9 @@ export const NavbarComponent = () => {
             tag="ul"
             className="lg:flex hidden items-center justify-between gap-5"
           >
-            <Navbar.Link linkName="News" />
-            <Navbar.Link linkName="Resources" />
+            <Navbar.Link linkName="Webinars" />
+            <Navbar.Link linkName="Book A Call" />
+            <Button size="md" type="primary">Login</Button>
           </Navbar.Container>
           <Button size="sm" type="link">
             <span>
