@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { ref, get, getDatabase } from "firebase/database";
 import { Link, useNavigate } from "react-router-dom";
-
+import { signInWithPopup,GoogleAuthProvider } from "firebase/auth";
+import { auth } from "../firebase";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -9,6 +10,35 @@ const Login = () => {
     email: "",
     password: "",
   });
+  const googleSignIn = async () => {
+    try {
+      const googleAuthProvider = new GoogleAuthProvider();
+      const result = await signInWithPopup(auth, googleAuthProvider);
+
+      console.log("Sign-in result:", result);
+
+      // Check if the result object and its credential property exist
+      if (result && result.user) {
+        const accessToken = result.user.accessToken;
+
+        // Store the accessToken in local storage
+        localStorage.setItem("accessToken", accessToken);
+
+        console.log(
+          "Successfully signed in with Google. Access token:",
+          accessToken
+        );
+        navigate("/");
+      } else {
+        console.error(
+          "Error signing in with Google: Missing credential information"
+        );
+      }
+    } catch (error) {
+      console.error("Error signing in with Google:", error.message);
+    }
+  };
+
 
   const [showPassword, setShowPassword] = React.useState(false);
 
@@ -80,11 +110,8 @@ const Login = () => {
     <div className="relative w-full md:w-1/2 h-[50vh] md:h-full flex flex-col">
       <div className="absolute top-[20%] left-[10%] flex flex-col">
         <h1 className="text-lg md:text-4xl lg:text-5xl text-white font-bold my-4">
-          Turn Your Ideas Into Reality
+          Aspiration Meets Guidance
         </h1>
-        <p className="text-base md:text-lg lg:text-xl text-white font-normal">
-          Start for free and get attractive offers from the community
-        </p>
       </div>
       <img
         src="/images/IIM_Calcutta.jpg"
@@ -92,9 +119,9 @@ const Login = () => {
         className="w-full h-full object-cover"
       />
     </div>
-    <div className="w-full md:w-1/2 max-w-[500px] mx-auto h-full bg-[#f5f5f5] flex flex-col p-4 md:p-8 lg:p-12 justify-between items-center">
+    <div className="w-full md:w-1/2  mx-auto h-full bg-[#f5f5f5] flex flex-col p-4 md:p-8 lg:p-12 justify-between items-center">
       <h1 className="text-base md:text-xl lg:text-2xl text-[#060606] font-semibold mb-4">
-        Interactive Brand
+        Peer Support
       </h1>
       <div className="w-full flex flex-col">
         <div className="w-full flex flex-col mb-4">
@@ -146,10 +173,10 @@ const Login = () => {
           <div className="w-full h-[1px] bg-black"></div>
           <p className="text-base md:text-lg lg:text-xl absolute text-black/80 bg-[#f5f5f5]">or</p>
         </div>
-        <div className="w-full text-[#060606] my-2 font-semibold bg-[#f5f5f5] border border-black/40 rounded-md p-3 md:p-4 lg:p-5 text-center flex items-center justify-center cursor-pointer">
+        <button onClick={googleSignIn} className="w-full text-[#060606] my-2 font-semibold bg-[#f5f5f5] border border-black/40 rounded-md p-3 md:p-4 lg:p-5 text-center flex items-center justify-center cursor-pointer">
           <img src="/images/google-icon.png" className="h-6 mr-2" />
           Sign In With Google
-        </div>
+        </button>
       </div>
       <div className="w-full flex items-center justify-center">
         <p className="text-base md:text-lg lg:text-xl font-normal text-[#060606]">
