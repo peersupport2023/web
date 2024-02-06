@@ -62,7 +62,9 @@ const NavbarComponent = () => {
               <Navbar.Link linkName="What We Do" />
               <Navbar.Link linkName="Road To MBA" />
               <Navbar.Link linkName="Meet Our Mentors" />
+              <Link to="/webinars">
               <Navbar.Link linkName="Webinars" />
+              </Link>
               <Navbar.Link linkName="Book A Call" />
               {!userTokenExists && !accessTokenExists ? (
                 <Link to="/login">
@@ -81,7 +83,9 @@ const NavbarComponent = () => {
               tag="ul"
               className="lg:flex hidden items-center justify-between gap-5"
             >
+              <Link to='/webinars'>
               <Navbar.Link linkName="Webinars" />
+              </Link>
               <Navbar.Link linkName="Book A Call" />
               {!userTokenExists && (
                 <Link to="/login">

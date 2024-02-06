@@ -11,6 +11,8 @@ import { UserAuthContextProvider } from "./context/UserAuthContext";
 import Footer from "./components/Footer";
 // import FooterComponent from "./components/Footer";
 import './App.css'
+import Mentors from "./components/Mentors";
+import Webinars from "./components/Webinars";
 function App() {
   return (
     <>
@@ -23,11 +25,13 @@ function App() {
         <About />
         <Services />
         <ModalExampleContentImage />
+        <Mentors/>
         <Footer/>
         </>
         }/>      
       <Route path="/login" element={<Login/>}/>
       <Route path="/signup" element={<Signup/>}/>
+      <Route path="webinars" element={<Webinars/>}/>
       </Routes>
       </UserAuthContextProvider>
     </>

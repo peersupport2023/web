@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { ref, get, getDatabase } from "firebase/database";
 import { Link, useNavigate } from "react-router-dom";
-import { signInWithPopup,GoogleAuthProvider } from "firebase/auth";
+import { signInWithRedirect,GoogleAuthProvider,getRedirectResult } from "firebase/auth";
 import { auth } from "../firebase";
 
 const Login = () => {
@@ -13,7 +13,7 @@ const Login = () => {
   const googleSignIn = async () => {
     try {
       const googleAuthProvider = new GoogleAuthProvider();
-      const result = await signInWithPopup(auth, googleAuthProvider);
+      const result = await signInWithRedirect(auth, googleAuthProvider);
 
       console.log("Sign-in result:", result);
 
@@ -38,6 +38,27 @@ const Login = () => {
       console.error("Error signing in with Google:", error.message);
     }
   };
+  useEffect(() => {
+    const handleSignInRedirect = async () => {
+      try {
+        const result = await getRedirectResult(auth);
+  
+        if (result && result.user) {
+          const accessToken = result.user.accessToken;
+          localStorage.setItem("accessToken", accessToken);
+          console.log("Successfully signed in with Google. Access token:", accessToken);
+          navigate("/");
+        } else {
+          console.error("Error signing in with Google: Missing user information");
+        }
+      } catch (error) {
+        console.error("Error signing in with Google:", error.message);
+      }
+    };
+  
+    handleSignInRedirect();
+  }, []); // Run once on component mount
+
 
 
   const [showPassword, setShowPassword] = React.useState(false);

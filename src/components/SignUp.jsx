@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ref, get, push, getDatabase } from "firebase/database";
 import { database } from "../firebase";
-import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { signInWithPopup, GoogleAuthProvider, signInWithRedirect,getRedirectResult } from "firebase/auth";
 import { auth } from "../firebase";
 const Signup = () => {
   const navigate = useNavigate();
@@ -74,7 +74,7 @@ const Signup = () => {
       });
   
       console.log("User data submitted to Firebase:", values);
-      navigate("/login");
+      navigate("/");
     } catch (error) {
       console.error("Error submitting user data to Firebase:", error);
     }
@@ -83,7 +83,7 @@ const Signup = () => {
   const googleSignIn = async () => {
     try {
       const googleAuthProvider = new GoogleAuthProvider();
-      const result = await signInWithPopup(auth, googleAuthProvider);
+      const result = await signInWithRedirect(auth, googleAuthProvider);
 
       console.log("Sign-in result:", result);
 
@@ -108,6 +108,26 @@ const Signup = () => {
       console.error("Error signing in with Google:", error.message);
     }
   };
+  useEffect(() => {
+    const handleSignInRedirect = async () => {
+      try {
+        const result = await getRedirectResult(auth);
+  
+        if (result && result.user) {
+          const accessToken = result.user.accessToken;
+          localStorage.setItem("accessToken", accessToken);
+          console.log("Successfully signed in with Google. Access token:", accessToken);
+          navigate("/");
+        } else {
+          console.error("Error signing in with Google: Missing user information");
+        }
+      } catch (error) {
+        console.error("Error signing in with Google:", error.message);
+      }
+    };
+  
+    handleSignInRedirect();
+  }, []); // Run once on component mount
 
   return (
     <>
