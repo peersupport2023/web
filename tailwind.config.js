@@ -7,4 +7,8 @@ export default {
     "node_modules/keep-react/**/*.{js,jsx,ts,tsx}"
   ],
   presets: [keepPreset],
+  plugins: [
+    // ...
+    require('flowbite/plugin'),
+  ],
 };

@@ -195,46 +195,5 @@ export const CardData_2 = [
       `
     ],
   },
-  {
-    id: 5,
-    image: "/images/Sandeep.png",
-    header: "Sandeep Kumar Singh",
-    description: [
-      `Q1. Good evening, Sandeep. My name is Shreya Swain, your interviewer from Peer Support for the day. Tell me a little about yourself.
-      `,
-
-      `Ans: Good evening, Shreya, my name is Sandeep Kumar Singh. Currently, I am pursuing my MBA in DoMS, IIT Madras. I have completed my B.Tech from Veer Surendra Sai University of Technology, Burla from the Department of Electrical Engineering. I used to work at Principal Global Services (PGS) after my bachelor's before Joining for an MBA degree.
-      `,
-
-      `Q2. That’s impressive. What was the main reason behind the switch of careers from PGS to a full-term MBA degree?
-      `,
-
-      `Ans: Though I had received a well-paying job after my bachelor's degree, the prospect of a management course had always appealed to me. After I came across the idea of the CAT, I started preparing for it immediately. 
-      One of my biggest motivations is my perseverance in management. I was leading the Students’ Cultural Association of my college. During that period, I got the opportunity to deal with multiple organizations regarding sponsorship and work with many teams to manage the event smoothly. I got a taste of management and wanted to explore it further from a broader perspective of corporate.
-      
-      `,
-
-      `Q3. How was the entire process of MBA selection in IITs?
-      ? 
-       `,
-
-      `Ans: IITs generally roll out their form separately. After the declaration of CAT results, you can find the application link on their website. You have to give all the details regarding your profile. Then there they used to ask 3-4 questions based on your career goals, the objective of joining an MBA, and questions resembling your SOP.
-      After you get shortlisted here, you will be called for the WAT/PI process which will be held at 5 different nodal centers. You can choose your center accordingly. The WAT revolves around general topics or current issues. For me, it was ‘How EV as Public transport can help in attaining sustainability’. Then you will be headed towards your Interview panel where you will be interviewed and then the final verdict comes up through your mail.
-      `,
-      `Q4. Could you please mention some of your interview questions to our readers?
-      `,
-      `Ans: Yes sure, my interview generally revolved around my work-ex. They asked me about my current company, their net worth, my role in detail, and our competitors. Then they asked about the technology I was working in and I mentioned it to be Salesforce. Then they started asking about Salesforce, how it operates, the different clouds, and who are the competitors of Salesforce. Then they asked some HR questions regarding why MBA despite having a job, which section you enjoyed the most in CAT, why is your VARC score not good, and which companies you are willing to join in placements. Some general questions around it like when I mentioned about Food Processing and Energy company they asked me to give some examples around it and asked for the reason behind choosing them.
-      `,
-      `Q5. How would you describe your experience as a student of MBA in IIT, Madras? 
-      `,
-      `Ans: Joining IITM is one of the best decisions I cherish in my life. Our batch size is 94 students from different backgrounds with different levels of experience. This gives you a variety of minds to interact with. The course curriculum is very structured and application-oriented. We have some of the best faculties at the world level you can say who are expert in their domain and being a small size batch the one-on-one interaction with them in and outside class is very fruitful. Starting from learning the theory to applying it in various case studies and projects gives a wholesome experience. Further, we used to have industry connects on a weekly basis where you get to learn from business leaders.
-      Coming to the fun part the department comes together to celebrate and enjoy. Starting from auctions and sports tournaments we celebrate many festivals with pomp and show.
-      The IIT ecosystem adds the cherry to the top. We have one of the biggest Incubation centers where you can apply to incubate your startup when the cohort opens. You get a chance to interact with some of the best minds of our nation and work with them on their projects and events. Many workshops and sessions are lined up every weekend to enrich your knowledge and experience.
-      `,
-      `Q6. What are your plans after completing your MBA?
-      `,
-      `Ans: I am looking forward to growing and elevating my career in the corporate domain. 
-      `
-    ],
-  },
+ 
 ];

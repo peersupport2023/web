@@ -8,6 +8,9 @@ import { Route, Routes } from "react-router-dom";
 import Login from "./components/Login";
 import Signup from "./components/SignUp";
 import { UserAuthContextProvider } from "./context/UserAuthContext";
+import Footer from "./components/Footer";
+// import FooterComponent from "./components/Footer";
+import './App.css'
 function App() {
   return (
     <>
@@ -20,6 +23,7 @@ function App() {
         <About />
         <Services />
         <ModalExampleContentImage />
+        <Footer/>
         </>
         }/>      
       <Route path="/login" element={<Login/>}/>

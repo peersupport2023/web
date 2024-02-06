@@ -30,10 +30,11 @@ function ModalExampleContentImage() {
         key={index}
         style={{
           fontSize: "1.2rem",
-          fontWeight: "500",
           margin: "1rem 0",
           textTransform: "none",
           listStyle:"none",
+          fontWeight: index % 2 === 1 ? "800" : "500", // Apply background color to even child components
+          
         }}
       >
         {desc}
@@ -44,7 +45,7 @@ function ModalExampleContentImage() {
   return (
     <>
       <div className="heading" style={{ margin: "2rem" }}>
-        <AnimatedTitle name="Road To MBA ."></AnimatedTitle>
+        <AnimatedTitle name="Road To MBA "></AnimatedTitle>
       </div>
       <Box
         sx={{

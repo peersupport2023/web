@@ -4,7 +4,7 @@ import { useAnimation, motion, easeIn } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const Title = styled.h2`
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   font-weight: 500;
 `;
 
@@ -16,7 +16,7 @@ const Word = styled(motion.span)`
 
 const Character = styled(motion.span)`
   display: inline-block;
-  margin-right: -0.05em;
+  margin-right: 0.05em;
 `;
 
 export default function AnimatedTitle({ name }) {

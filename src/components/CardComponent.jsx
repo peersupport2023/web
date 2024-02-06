@@ -27,8 +27,8 @@ const CardComponent = () => {
             delay: (index / 2) * 0.2 + 0.5,
           }}
         >
-          <Card sx={{ width: 345, height: 500 }}>
-            <CardMedia component="img" height="140" image={item.image} alt="green iguana" />
+          <Card sx={{ width: 300, height: 500 }}>
+            <CardMedia component="img" height="140" image={item.image} alt={item.header} />
             {!item.isUrl ? (
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
