@@ -46,7 +46,9 @@ const NavbarComponent = () => {
           >
             <Navbar.Link linkName="What We Do" />
             <Navbar.Link linkName="Road To MBA" />
-            <Navbar.Link linkName="Meet Our Mentors" />
+            <Link to='/Meetmentors'>
+                <Navbar.Link linkName="Meet Our Mentors" />
+            </Link>
           </Navbar.Container>
           <Navbar.Brand className="lg:items-center">
             <img
@@ -61,7 +63,9 @@ const NavbarComponent = () => {
             <Navbar.Container tag="ul" className="flex flex-col gap-5">
               <Navbar.Link linkName="What We Do" />
               <Navbar.Link linkName="Road To MBA" />
-              <Navbar.Link linkName="Meet Our Mentors" />
+              <Link to='/Meetmentors'>
+                <Navbar.Link linkName="Meet Our Mentors" />
+              </Link>
               <Navbar.Link linkName="Webinars" />
               <Navbar.Link linkName="Book A Call" />
               {!userTokenExists && !accessTokenExists ? (

@@ -11,6 +11,7 @@ import { UserAuthContextProvider } from "./context/UserAuthContext";
 import Footer from "./components/Footer";
 // import FooterComponent from "./components/Footer";
 import './App.css'
+import MeetOurMentor from "./components/MeetOurMentor";
 function App() {
   return (
     <>
@@ -25,7 +26,8 @@ function App() {
         <ModalExampleContentImage />
         <Footer/>
         </>
-        }/>      
+        }/>   
+      <Route path="/MeetMentors" element={<MeetOurMentor/>}/>
       <Route path="/login" element={<Login/>}/>
       <Route path="/signup" element={<Signup/>}/>
       </Routes>
