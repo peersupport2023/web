@@ -3,4 +3,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .bg-custom-blue {
+      background-color: rgba(27, 77, 255, 0.9);
+    }
+  
+    .bg-custom-gray {
+      background-color: rgba(169, 169, 169, 0.8);
+    }
+  }
   

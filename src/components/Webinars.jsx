@@ -6,6 +6,8 @@ import NavbarComponent from "./NavbarComponent";
 import Footer from "./Footer";
 
 function Webinars() {
+  const aspectRatio = window.innerWidth >= 768 ? "16/9" : "4 / 3";
+  const widthRatio = window.innerWidth >= 768 ? "auto":"80rem"
   return (
     <>
       <NavbarComponent />
@@ -31,29 +33,83 @@ function Webinars() {
             sx={{
               borderRadius: "0.5rem",
               border: "0.1rem solid #0f1922",
-              width: "70rem",
-              height: "11rem",
-              background: `url(/images/IIM_Calcutta.jpg)`,
-              backgroundSize: "cover",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "center",
+              width:`${widthRatio}`, // Adjusted width for responsiveness
+              height: "15rem", // Adjusted height for responsiveness
+              aspectRatio, // 16:9 aspect ratio for responsive image
+              position: "relative", // Ensure aspect ratio works
+              overflow: "hidden", // Prevent image overflow
             }}
-          ></Box>
+          >
+            <img
+              src="/images/IIM_Calcutta.jpg"
+              alt="Webinar Image"
+              style={{
+                
+                width: "100%", // Ensure image covers entire container
+                height: "100%", // Ensure image covers entire container
+                objectFit: "contain", // Maintain aspect ratio and cover container
+              }}
+            />
+          </Box>
           <Box
-        sx={{
-          fontSize: "1rem",
-          fontWeight: "200",
-          textAlign: "justify",
-          paddingLeft: "1rem", // Add left padding for spacing between image and text
-        }}
-      >
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
-        suscipit numquam corrupti, impedit maxime est expedita sapiente ad nam
-        amet non autem voluptatum vero consequatur eos dolorum, iusto
-      </Box>
+            sx={{
+              fontSize: "1rem",
+              fontWeight: "200",
+              textAlign: "justify",
+              paddingLeft: "1rem", // Add left padding for spacing between image and text
+            }}
+          >
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
+            suscipit numquam corrupti, impedit maxime est expedita sapiente ad
+            nam amet non autem voluptatum vero consequatur eos dolorum, iusto
+          </Box>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row-reverse",
+            alignItems: "flex-start", // Align items at the top
+            padding:"1rem 0"
+          }}
+        >
+          <Box
+            className="card"
+            sx={{
+              borderRadius: "0.5rem",
+              border: "0.1rem solid #0f1922",
+              width:`${widthRatio}`, // Adjusted width for responsiveness
+              height: "15rem", // Adjusted height for responsiveness
+              aspectRatio, // 16:9 aspect ratio for responsive image
+              position: "relative", // Ensure aspect ratio works
+              overflow: "hidden", // Prevent image overflow
+            }}
+          >
+            <img
+              src="/images/IIM_Calcutta.jpg"
+              alt="Webinar Image"
+              style={{
+                
+                width: "100%", // Ensure image covers entire container
+                height: "100%", // Ensure image covers entire container
+                objectFit: "contain", // Maintain aspect ratio and cover container
+              }}
+            />
+          </Box>
+          <Box
+            sx={{
+              fontSize: "1rem",
+              fontWeight: "200",
+              textAlign: "justify",
+              paddingRight: "1rem", // Add left padding for spacing between image and text
+            }}
+          >
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
+            suscipit numquam corrupti, impedit maxime est expedita sapiente ad
+            nam amet non autem voluptatum vero consequatur eos dolorum, iusto
+          </Box>
         </Box>
       </Box>
-      
+
       <Footer />
     </>
   );

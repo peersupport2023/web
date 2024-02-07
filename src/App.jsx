@@ -9,31 +9,37 @@ import Login from "./components/Login";
 import Signup from "./components/SignUp";
 import { UserAuthContextProvider } from "./context/UserAuthContext";
 import Footer from "./components/Footer";
-import "./App.css";
-import Mentors from "./components/Mentors";
+// import FooterComponent from "./components/Footer";
+import './App.css'
+import MeetOurMentor from "./components/MeetOurMentor";
 import Webinars from "./components/Webinars";
-
+import Mentors from "./components/Mentors";
 function App() {
+  useEffect(() => {
+    // Scroll to the top when ComponentB mounts
+    window.scrollTo({
+      top: 0,
+      behavior:"smooth" // You can use 'smooth' for smooth scrolling
+    });
+  }, []);
   return (
     <UserAuthContextProvider>
       <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <NavbarComponent />
-              <CarouselComponent />
-              <About />
-              <Services />
-              <ModalExampleContentImage />
-              <Mentors />
-              <Footer />
-            </>
-          }
-        />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/webinars" element={<Webinars />} />
+        <Route exact path="/" element={
+          <>
+        <NavbarComponent />
+        <CarouselComponent />
+        <About />
+        <Services />
+        <ModalExampleContentImage />
+        <Mentors/>
+        <Footer/>
+        </>
+        }/> 
+        <Route path="/webinars" element={<Webinars/>}/>
+      <Route path="/MeetMentors" element={<MeetOurMentor/>}/>
+      <Route path="/login" element={<Login/>}/>
+      <Route path="/signup" element={<Signup/>}/>
       </Routes>
     </UserAuthContextProvider>
   );

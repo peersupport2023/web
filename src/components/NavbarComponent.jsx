@@ -46,7 +46,9 @@ const NavbarComponent = () => {
           >
             <Navbar.Link linkName="What We Do" />
             <Navbar.Link linkName="Road To MBA" />
-            <Navbar.Link linkName="Meet Our Mentors" />
+            <Link to='/Meetmentors'>
+                <Navbar.Link linkName="Meet Our Mentors" />
+            </Link>
           </Navbar.Container>
           <Link to='/'>
           <Navbar.Brand className="lg:items-center">
@@ -63,8 +65,10 @@ const NavbarComponent = () => {
             <Navbar.Container tag="ul" className="flex flex-col gap-5">
               <Navbar.Link linkName="What We Do" />
               <Navbar.Link linkName="Road To MBA" />
-              <Navbar.Link linkName="Meet Our Mentors" />
-              <Link to="/webinars">
+              <Link to='/Meetmentors'>
+                <Navbar.Link linkName="Meet Our Mentors" />
+              </Link>
+              <Link to='/webinars'>
               <Navbar.Link linkName="Webinars" />
               </Link>
               <Navbar.Link linkName="Book A Call" />
