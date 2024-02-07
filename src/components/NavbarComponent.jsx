@@ -48,6 +48,7 @@ const NavbarComponent = () => {
             <Navbar.Link linkName="Road To MBA" />
             <Navbar.Link linkName="Meet Our Mentors" />
           </Navbar.Container>
+          <Link to='/'>
           <Navbar.Brand className="lg:items-center">
             <img
               src="/images/favicon_1.png"
@@ -56,6 +57,7 @@ const NavbarComponent = () => {
               height="100"
             />
           </Navbar.Brand>
+          </Link>
 
           <Navbar.Collapse collapseType="sidebar">
             <Navbar.Container tag="ul" className="flex flex-col gap-5">

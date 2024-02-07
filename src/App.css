@@ -1,14 +1,24 @@
+html{
+  font-size: 62.5%;
+}
 #root {
   margin: 0 ;
   padding: 0;
   box-sizing: border-box;
 
 }
+
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 ::-webkit-scrollbar-thumb {
   background: #0F1922;
   border-radius:  5px;
 }
 
+.heading{
+  font-weight: 800;
+  font-size: 4.8rem;
+  overflow: hidden;
+  text-transform:  uppercase;
+}
