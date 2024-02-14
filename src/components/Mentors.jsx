@@ -35,7 +35,7 @@ function Mentors() {
           alignItems: "flex-start",
         }}
       >
-        {CardData_3.map((item, index) => (
+        {CardData_3.slice(0, 4).map((item, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 50 }}
@@ -48,9 +48,13 @@ function Mentors() {
               delay: (index / 2) * 0.2 + 0.5,
             }}
           >
-            <Card>
-              <Image src={item.image} ui={false} />
-              <CardContent>
+            <Card style={{ height: "20rem", width: "300px" }}>
+              <Image
+                src={item.image}
+                ui={false}
+                style={{ height: "75%", objectFit: "contain" }}
+              />
+              <CardContent style={{ height: "40%" }}>
                 <CardHeader>{item && item.name}</CardHeader>
                 <CardDescription
                   style={{

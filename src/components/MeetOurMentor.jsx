@@ -43,14 +43,18 @@ const MeetOurMentor = () => {
             viewport={{ once: true }}
             transition={{
               duration: 0.1,
-              type: 'spring',
+              type: "spring",
               stiffness: 80,
               delay: (index / 2) * 0.2 + 0.5,
             }}
           >
-           <Card>
-              <Image src={item.image} ui={false} />
-              <CardContent>
+            <Card style={{ height: "20rem", width: "300px" }}>
+              <Image
+                src={item.image}
+                ui={false}
+                style={{ height: "75%", objectFit: "contain" }}
+              />
+              <CardContent style={{ height: "40%" }}>
                 <CardHeader>{item && item.name}</CardHeader>
                 <CardDescription
                   style={{
