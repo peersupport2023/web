@@ -45,7 +45,9 @@ const NavbarComponent = () => {
             className="lg:flex hidden items-center justify-between gap-8"
           >
             <Navbar.Link linkName="What We Do" />
+            <Link to='/roadtomba'>
             <Navbar.Link linkName="Road To MBA" />
+            </Link>
             <Link to='/Meetmentors'>
                 <Navbar.Link linkName="Meet Our Mentors" />
             </Link>
@@ -64,7 +66,9 @@ const NavbarComponent = () => {
           <Navbar.Collapse collapseType="sidebar">
             <Navbar.Container tag="ul" className="flex flex-col gap-5">
               <Navbar.Link linkName="What We Do" />
+              <Link to='/roadtomba'>
               <Navbar.Link linkName="Road To MBA" />
+              </Link>
               <Link to='/Meetmentors'>
                 <Navbar.Link linkName="Meet Our Mentors" />
               </Link>

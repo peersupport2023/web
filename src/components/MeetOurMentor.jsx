@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import NavbarComponent from './NavbarComponent';
+
 import Footer from './Footer';
 import AnimatedTitle from './AnimTitle';
 import { Box } from '@mui/material';
 import { motion } from 'framer-motion';
 import { CardHeader, CardContent, Card, Image,CardDescription,Icon } from 'semantic-ui-react';
-import LinkedInIcon from '@mui/icons-material/LinkedIn'; 
+
 import { CardData_3 } from './CardData_3';
 
 const MeetOurMentor = () => {
@@ -21,7 +20,7 @@ const MeetOurMentor = () => {
 
   return (
     <>
-      <NavbarComponent />
+      
       <div className='m-[2rem]'>
         <AnimatedTitle name="Meet Our Mentors"></AnimatedTitle>
       </div>
@@ -80,10 +79,6 @@ const MeetOurMentor = () => {
           </motion.div>
         ))}
       </Box>
-      
-
-
-      <Footer />
     </>
   );
 };

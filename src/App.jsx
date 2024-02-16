@@ -14,6 +14,7 @@ import './App.css'
 import MeetOurMentor from "./components/MeetOurMentor";
 import Webinars from "./components/Webinars";
 import Mentors from "./components/Mentors";
+import RoadToMba from "./components/RoadToMbaPage";
 function App() {
   useEffect(() => {
     // Scroll to the top when ComponentB mounts
@@ -24,23 +25,26 @@ function App() {
   }, []);
   return (
     <UserAuthContextProvider>
+      <NavbarComponent />
       <Routes>
         <Route exact path="/" element={
           <>
-        <NavbarComponent />
+        
         <CarouselComponent />
         <About />
         <Services />
         <ModalExampleContentImage />
         <Mentors/>
-        <Footer/>
+        
         </>
         }/> 
         <Route path="/webinars" element={<Webinars/>}/>
       <Route path="/MeetMentors" element={<MeetOurMentor/>}/>
       <Route path="/login" element={<Login/>}/>
       <Route path="/signup" element={<Signup/>}/>
+      <Route path="/roadtomba" element={<RoadToMba/>}/>
       </Routes>
+      <Footer/>
     </UserAuthContextProvider>
   );
 }

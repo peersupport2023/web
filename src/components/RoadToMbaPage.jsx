@@ -17,7 +17,7 @@ import {
 } from "semantic-ui-react";
 import { CardData_2 } from "./CardData_2";
 
-function ModalExampleContentImage() {
+function RoadToMba() {
   const [open, setOpen] = React.useState(false);
   const [curr, setCurrent] = useState();
   const dataArray = CardData_2;
@@ -49,16 +49,16 @@ function ModalExampleContentImage() {
       </div>
       <Box
         sx={{
-          padding: "1rem",
+          padding: "1.5rem 1.2rem",
           display: "flex",
           flexWrap: "wrap",
           rowGap: "1.2rem",
           columnGap: "1rem",
-          justifyContent: "space-evenly",
-          alignItems: "flex-start",
+          justifyContent: "flex-start",
+        //   alignItems: "center",
         }}
       >
-        {dataArray.slice(0,4).map((item, index) => (
+        {dataArray.map((item, index) => (
           <Modal
             key={index}
             onClose={() => setOpen(false)}
@@ -107,4 +107,4 @@ function ModalExampleContentImage() {
   );
 }
 
-export default ModalExampleContentImage;
+export default RoadToMba;

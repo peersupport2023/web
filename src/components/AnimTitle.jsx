@@ -4,8 +4,8 @@ import { useAnimation, motion, easeIn } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const Title = styled.h2`
-  font-size: 2.2rem;
-  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: 800;
 `;
 
 const Word = styled(motion.span)`

@@ -24,7 +24,7 @@ export const CarouselComponent = () => {
           style={{ width: "100%", flex: "1", objectFit: "contain" }}
         />
         <img
-          src="/images/Website cat mba .png"
+          src="/images/Website cat mba  (1).png"
           alt="slider-2"
           style={{ width: "100%", flex: "1", objectFit: "contain" }}
         />
@@ -34,7 +34,7 @@ export const CarouselComponent = () => {
           style={{ width: "100%", flex: "1", objectFit: "contain" }}
         />
         <img
-          src="/images/Website cat mba .png"
+          src="/images/Website cat mba  (1).png"
           alt="slider-4"
           style={{ width: "100%", flex: "1", objectFit: "contain" }}
         />

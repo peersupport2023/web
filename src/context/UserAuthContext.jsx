@@ -11,8 +11,10 @@ import {auth} from '../firebase'
 
 const userAuthContext = createContext();
 
+
 export function UserAuthContextProvider({ children }) {
   const [user, setUser] = useState({});
+  const [services,setServices] = useState("")
 
   function logIn(email, password) {
     return signInWithEmailAndPassword(auth, email, password);
@@ -28,7 +30,23 @@ export function UserAuthContextProvider({ children }) {
     return signInWithPopup(auth, googleAuthProvider);
   }
 
+  const getServices = async () => {
+    try {
+      const response = await fetch(`http://localhost:8000/api/service`, {
+        method: "GET",
+      });
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data.msg);
+        setServices(data.msg)
+      }
+    } catch (error) {
+      console.log(`services error ${error}`);
+    }
+  };
+
   useEffect(() => {
+    getServices()
     const unsubscribe = onAuthStateChanged(auth, (currentuser) => {
       console.log("Auth", currentuser);
       setUser(currentuser);
@@ -37,11 +55,12 @@ export function UserAuthContextProvider({ children }) {
     return () => {
       unsubscribe();
     };
+    
   }, []);
 
   return (
     <userAuthContext.Provider
-      value={{ user, logIn, signUp, logOut, googleSignIn }}
+      value={{ user, logIn, signUp, logOut, googleSignIn,services }}
     >
       {children}
     </userAuthContext.Provider>

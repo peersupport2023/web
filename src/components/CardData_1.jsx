@@ -1,7 +1,7 @@
 export const CardData_1 = [
     {
         id:1,
-        image:'/images/1.png',
+        image:'/images/1_prev_ui.png',
         header:'One-on-One Consultation',
         isUrl:false,
         description:'We help you connect one-on-one with the mentors currently pursuing their MBA in top-notch B-schools to guide you in making informed decisions.',
@@ -9,7 +9,7 @@ export const CardData_1 = [
 
     },
     {
-        id:2,
+        id:4,
         image:'/images/4.png',
         header:'GD/WAT/PI Mock and Guidance',
         isUrl:false,
@@ -23,7 +23,7 @@ export const CardData_1 = [
         isUrl:true,
         description:'Your SOP and Resume speak for you. We help you curate your SOP and Resume through the bright minds currently studying in your desired college as per the college standards.',
         url:"https://docs.google.com/forms/d/16o_sUtWKNlypiqEsgkT7z1-vrJW2VFFm4cly31cvaY4/viewform?edit_requested=true",
-        btntitle:"Get Your SOP and Resume reviewed"
+        btntitle:"Get Your SOP & Resume reviewed"
     },
     {
         id:3,

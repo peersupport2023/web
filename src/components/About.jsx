@@ -12,7 +12,7 @@ function About() {
       
         <Box
         sx={{
-          margin: "0 2rem",
+          margin: "2px 2rem",
           fontSize: { xs: "1.2rem", md: "1.2rem" },
           fontWeight: "100",
           textTransform: "capitalize",

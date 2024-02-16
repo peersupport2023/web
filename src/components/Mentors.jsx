@@ -89,11 +89,11 @@ function Mentors() {
             padding:"0 2rem"
           }}
         >
-          <button className="text-white my-2 font-semibold bg-custom-blue rounded-md p-3 md:p-4 lg:p-3 text-center cursor-pointer">
+          <button className="text-blacks my-2 font-semibold bg-custom-blue rounded-md p-3 md:p-4 lg:p-3 text-center cursor-pointer">
             Book A Call
           </button>
           <Link to='/MeetMentors'>
-            <button className="text-white my-2 font-semibold bg-custom-blue rounded-md p-3 md:p-4 lg:p-3 text-center cursor-pointer">
+            <button className="text-blacks my-2 font-semibold bg-custom-blue rounded-md p-3 md:p-4 lg:p-3 text-center cursor-pointer">
               Meet all our mentors
             </button>
           </Link>

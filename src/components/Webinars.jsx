@@ -10,7 +10,6 @@ function Webinars() {
   const widthRatio = window.innerWidth >= 768 ? "auto":"80rem"
   return (
     <>
-      <NavbarComponent />
       <div className="heading" style={{ margin: "2rem" }}>
         <AnimatedTitle name="Webinars "></AnimatedTitle>
       </div>
@@ -110,7 +109,6 @@ function Webinars() {
         </Box>
       </Box>
 
-      <Footer />
     </>
   );
 }

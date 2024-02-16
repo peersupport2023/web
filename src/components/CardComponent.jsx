@@ -4,13 +4,25 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea, Button } from "@mui/material";
+import { CardActionArea } from "@mui/material";
 import { CardData_1 } from "./CardData_1";
+// import { useUserAuth } from "../context/UserAuthContext";
 
 const CardComponent = () => {
   const handleClick = (url) => {
     window.open(url, "_blank");
   };
+
+  // const {services} = useUserAuth();
+
+  // if (!services) {
+  //   // If services is undefined, return a loading state or an empty div
+  //   return (
+  //     <div className="container">
+  //       <p>Loading services...</p>
+  //     </div>
+  //   );
+  // }
 
   return (
     <>
@@ -27,22 +39,35 @@ const CardComponent = () => {
             delay: (index / 2) * 0.2 + 0.5,
           }}
         >
-          <Card sx={{ width: 300, height: 500, position: "relative" }}>
+          <Card sx={{ position: "relative", width: 300, height: 500 }}>
             <CardMedia
               component="img"
               height="140"
               image={item.image}
               alt={item.header}
             />
-            <CardContent sx={{ position: "absolute", bottom: 0, right: 0 }}>
+            <CardContent sx={{ position: "relative", bottom: 0, right: 0 }}>
               <Typography gutterBottom variant="h5" component="div">
                 {item.header}
               </Typography>
               <Typography variant="body2" color="text.secondary">
                 {item.description}
               </Typography>
-              <Button onClick={() => handleClick(item.url)}>{item.btntitle}</Button>
             </CardContent>
+            <CardActionArea
+              onClick={() => handleClick(item.url)}
+              sx={{
+                position: "absolute",
+                display: "flex",
+                justifyContent: "start",
+                bottom: "0",
+                right: "0",
+                color: "#179090",
+                padding: "0.5rem 1rem",
+              }}
+            >
+              {item.btntitle}
+            </CardActionArea>
           </Card>
         </motion.div>
       ))}
