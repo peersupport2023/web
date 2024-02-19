@@ -81,18 +81,18 @@ function Mentors() {
         ))}
         <Box
           sx={{
-            width:"100vw",
+            width: "100vw",
             display: "flex",
             flexDirection: "row",
             alignItems: "flex-start",
-            justifyContent:"space-between",
-            padding:"0 2rem"
+            justifyContent: "space-between",
+            padding: "0 2rem",
           }}
         >
           <button className="text-blacks my-2 font-semibold bg-custom-blue rounded-md p-3 md:p-4 lg:p-3 text-center cursor-pointer">
             Book A Call
           </button>
-          <Link to='/MeetMentors'>
+          <Link to="/MeetMentors">
             <button className="text-blacks my-2 font-semibold bg-custom-blue rounded-md p-3 md:p-4 lg:p-3 text-center cursor-pointer">
               Meet all our mentors
             </button>

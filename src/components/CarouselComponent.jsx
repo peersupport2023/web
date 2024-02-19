@@ -6,7 +6,7 @@ export const CarouselComponent = () => {
   const aspectRatio = window.innerWidth >= 768 ? "16/9" : "4 / 3";
 
   return (
-    <div style={{ maxWidth: "100%", overflow: "hidden", aspectRatio }}>
+    <div style={{  overflow: "hidden", aspectRatio }}>
       <Carousel
         slideInterval={5000}
         showControls={true}
@@ -16,12 +16,13 @@ export const CarouselComponent = () => {
           height: "100%",
           display: "flex",
           flexDirection: "column",
+          objectFit:"contain"
         }}
       >
         <img
           src="/images/Website cat mba .png"
           alt="slider-1"
-          style={{ width: "100%", flex: "1", objectFit: "contain" }}
+          style={{ objectFit: "contain" }}
         />
         <img
           src="/images/Website cat mba  (1).png"

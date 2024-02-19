@@ -22,7 +22,6 @@ function RoadToMba() {
   const [curr, setCurrent] = useState();
   const dataArray = CardData_2;
 
-  // Move the declaration of mappedDesc outside of the map function
   let mappedDesc;
   if (curr) {
     mappedDesc = curr.description.map((desc, index) => (
@@ -32,9 +31,8 @@ function RoadToMba() {
           fontSize: "1.2rem",
           margin: "1rem 0",
           textTransform: "none",
-          listStyle:"none",
-          fontWeight: index % 2 === 1 ? "800" : "500", // Apply background color to even child components
-          
+          listStyle: "none",
+          fontWeight: index % 2 === 1 ? "800" : "500",
         }}
       >
         {desc}
@@ -55,7 +53,6 @@ function RoadToMba() {
           rowGap: "1.2rem",
           columnGap: "1rem",
           justifyContent: "flex-start",
-        //   alignItems: "center",
         }}
       >
         {dataArray.map((item, index) => (
@@ -95,7 +92,18 @@ function RoadToMba() {
               </ModalActions>
             </ModalHeader>
             <ModalContent image scrolling>
-              <Image size="medium" src={curr && curr.image} />
+              <Image
+                size="medium"
+                src={curr && curr.image}
+                style={{
+                  maxWidth: "100%",
+                  maxHeight: "80vh",
+                  margin: "auto",
+                  '@media (min-width: 1200px)': {
+                    maxWidth: "60%",
+                  },
+                }}
+              />
               <ModalDescription>
                 <p>{mappedDesc}</p>
               </ModalDescription>

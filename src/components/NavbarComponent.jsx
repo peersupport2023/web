@@ -1,7 +1,7 @@
 "use client";
 import { Button, Navbar } from "keep-react";
 import { MagnifyingGlass } from "phosphor-react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useUserAuth } from "../context/UserAuthContext";
 const NavbarComponent = () => {
   const { user, logOut } = useUserAuth(); // Ensure logOut is available
@@ -75,6 +75,9 @@ const NavbarComponent = () => {
               <Link to='/webinars'>
               <Navbar.Link linkName="Webinars" />
               </Link>
+              <NavLink to='/resources'>
+                <Navbar.Link linkName="Resources"/>
+              </NavLink>
               <Navbar.Link linkName="Book A Call" />
               {!userTokenExists && !accessTokenExists ? (
                 <Link to="/login">
@@ -93,6 +96,9 @@ const NavbarComponent = () => {
               tag="ul"
               className="lg:flex hidden items-center justify-between gap-5"
             >
+              <NavLink to='/resources'>
+                <Navbar.Link linkName="Resources"/>
+              </NavLink>
               <Link to='/webinars'>
               <Navbar.Link linkName="Webinars" />
               </Link>
