@@ -3,15 +3,38 @@ import AnimatedTitle from "./AnimTitle";
 import Box from "@mui/material/Box";
 import { motion } from "framer-motion";
 
+
 function About() {
   return (
     <>
+    <Box
+          sx={{
+            paddingTop:"2rem",
+            fontFamily:" Roboto, Helvetica, Arial, sans-serif",
+            margin: "2px 2rem",
+            fontSize: { xs: "1.2rem", md: "1.2rem" },
+            fontWeight: "100",
+            textTransform: "capitalize",
+            textAlign: "justify",
+          }}
+        >
+          
+          Welcome to our website, your go-to destination for connecting with
+          experienced mentors who have successfully navigated the same path
+          you're on. Our mentors, drawn from recent batches of your dream
+          college, are here to share their insights and help you navigate
+          through your queries. These mentors offer valuable guidance and
+          clarification on various aspects of exam preparation, interviews, and
+          college life. Currently, our platform specializes in providing
+          services tailored to the field of MBA.
+        </Box>
       <div className="heading" style={{ margin: "1rem 2rem " }}>
         <AnimatedTitle name="Who Are We "/>
       </div>
       
         <Box
         sx={{
+          fontFamily:" Roboto, Helvetica, Arial, sans-serif",
           margin: "2px 2rem",
           fontSize: { xs: "1.2rem", md: "1.2rem" },
           fontWeight: "100",
@@ -45,7 +68,8 @@ function About() {
       >
         <Box
           sx={{
-            margin: "0 2rem",
+            fontFamily:" Roboto, Helvetica, Arial, sans-serif",
+            margin: "2px 2rem",
             fontSize: { xs: "1.2rem", md: "1.2rem" },
             fontWeight: "100",
             textTransform: "capitalize",
@@ -78,7 +102,8 @@ function About() {
       >
         <Box
           sx={{
-            margin: "0 2rem",
+            fontFamily:" Roboto, Helvetica, Arial, sans-serif",
+            margin: "2px 2rem",
             fontSize: { xs: "1.2rem", md: "1.2rem" },
             fontWeight: "100",
             textTransform: "capitalize",
@@ -91,25 +116,7 @@ function About() {
           intricacies of interviews and college life, the need for guidance is
           paramount. This is where our platform steps in.
         </Box>
-        <Box
-          sx={{
-            margin: "2rem",
-            fontSize: { xs: "1.2rem", md: "1.2rem" },
-            fontWeight: "100",
-            textTransform: "capitalize",
-            textAlign: "justify",
-          }}
-        >
-          <b>
-          Welcome to our website, your go-to destination for connecting with
-          experienced mentors who have successfully navigated the same path
-          you're on. Our mentors, drawn from recent batches of your dream
-          college, are here to share their insights and help you navigate
-          through your queries. These mentors offer valuable guidance and
-          clarification on various aspects of exam preparation, interviews, and
-          college life. Currently, our platform specializes in providing
-          services tailored to the field of MBA.</b> 
-        </Box>
+        
       </motion.div>
     </>
   );

@@ -1,5 +1,7 @@
 import React from 'react'
 import './Footer.css'
+import { FaFacebook, FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <footer class="footer-distributed">
@@ -9,37 +11,39 @@ function Footer() {
         <img id='footer-image'src="/images/favicon_1.png" alt="" />
 
         <p class="footer-links">
-          <a href="#" class="link-1">Home</a>
+          <a href='/' class="link-1">Home</a>
           
-          <a href="#">Blog</a>
+          <a href = '/roadtomba'>Road To MBA</a>
         
-          <a href="#">Pricing</a>
+          <a href = '/Meetmentors'>Meet Our Mentors</a>
         
-          <a href="#">About</a>
+          <a href='/webinars'>Webinar</a>
           
-          <a href="#">Faq</a>
+          <a href='/resources'>Resources</a>
           
-          <a href="#">Contact</a>
+          <a href='/'>Book A Mock Interview</a>
         </p>
 
-        <p class="footer-company-name">Company Name © 2015</p>
+        <p class="footer-company-name">Peer Support © 2023</p>
       </div>
 
       <div class="footer-center">
 
         <div>
           <i class="fa fa-map-marker"></i>
-          <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+          <p><span>IIT Madras</span> </p>
         </div>
 
         <div>
           <i class="fa fa-phone"></i>
-          <p>+1.555.555.5555</p>
+          <p>+91 7048931353</p>
+          <i class="fa fa-phone"></i>
+          <p>+91 9861669266</p>
         </div>
 
         <div>
           <i class="fa fa-envelope"></i>
-          <p><a href="mailto:support@company.com">support@company.com</a></p>
+          <p><a href="mailto:educationconsultationbypeers@gmail.com">educationconsultationbypeers@gmail.com</a></p>
         </div>
 
       </div>
@@ -48,15 +52,15 @@ function Footer() {
 
         <p class="footer-company-about">
           <span>About the company</span>
-          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+          Peer Support Is An Educational Consultation Platform To Connect Aspiring Students With Peers Currently Enrolled In Esteemed Colleges. Within Our User-Friendly Portal, Mentors From Diverse Backgrounds Come Together, Providing A Unique Opportunity For Aspirants To Connect And Engage In Meaningful Interactions.
         </p>
 
         <div class="footer-icons">
 
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-          <a href="#"><i class="fa fa-github"></i></a>
+        <a href="#"><FaFacebook /></a>
+      <a href="#"><FaTwitter /></a>
+      <a href="#"><FaLinkedin /></a>
+      <a href="#"><FaGithub /></a>
 
         </div>
 

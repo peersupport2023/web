@@ -49,12 +49,12 @@ function ModalExampleContentImage() {
       </div>
       <Box
         sx={{
-          padding: "1rem",
+          padding:"1rem",
           display: "flex",
           flexWrap: "wrap",
           rowGap: "1.2rem",
           columnGap: "1rem",
-          justifyContent: "space-evenly",
+          justifyContent: "center",
           alignItems: "flex-start",
         }}
       >
@@ -77,7 +77,9 @@ function ModalExampleContentImage() {
                   delay: (index / 2) * 0.2 + 0.5,
                 }}
               >
-                <Card onClick={() => setCurrent(item)}>
+                <Card style={{
+                  height: 220,
+                }} onClick={() => setCurrent(item)}>
                   <Image src={item.image} ui={false} />
                   <CardContent>
                     <CardHeader>{item && item.header}</CardHeader>
@@ -94,8 +96,8 @@ function ModalExampleContentImage() {
                 <Icon link name="close" onClick={() => setOpen(false)} />
               </ModalActions>
             </ModalHeader>
-            <ModalContent image scrolling>
-              <Image size="medium" src={curr && curr.image} />
+            <ModalContent scrolling>
+             
               <ModalDescription>
                 <p>{mappedDesc}</p>
               </ModalDescription>

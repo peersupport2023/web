@@ -7,14 +7,14 @@ import {
   GoogleAuthProvider,
   signInWithPopup,
 } from "firebase/auth";
-import {auth} from '../firebase'
+import { auth } from "../firebase";
 
 const userAuthContext = createContext();
 
-
 export function UserAuthContextProvider({ children }) {
   const [user, setUser] = useState({});
-  const [services,setServices] = useState("")
+  const [services, setServices] = useState("");
+  const [ment, setMentors] = useState("");
 
   function logIn(email, password) {
     return signInWithEmailAndPassword(auth, email, password);
@@ -38,15 +38,32 @@ export function UserAuthContextProvider({ children }) {
       if (response.ok) {
         const data = await response.json();
         console.log(data.msg);
-        setServices(data.msg)
+        setServices(data.msg);
       }
     } catch (error) {
       console.log(`services error ${error}`);
     }
   };
 
+  const getMentors = async () => {
+    try {
+      const response = await fetch(`http://localhost:8000/ment/mentor`, {
+        method: "GET",
+      });
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data.msg); // Log the entire data to check the structure
+        setMentors(data.msg); // Set mentors state with the fetched data
+      }
+    } catch (error) {
+      console.log(`mentors error:- ${error}`);
+    }
+  };
+  
+
   useEffect(() => {
-    getServices()
+    getServices();
+    getMentors();
     const unsubscribe = onAuthStateChanged(auth, (currentuser) => {
       console.log("Auth", currentuser);
       setUser(currentuser);
@@ -55,12 +72,11 @@ export function UserAuthContextProvider({ children }) {
     return () => {
       unsubscribe();
     };
-    
   }, []);
 
   return (
     <userAuthContext.Provider
-      value={{ user, logIn, signUp, logOut, googleSignIn,services }}
+      value={{ user, logIn, signUp, logOut, googleSignIn, services, ment }}
     >
       {children}
     </userAuthContext.Provider>

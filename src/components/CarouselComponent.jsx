@@ -41,5 +41,14 @@ export const CarouselComponent = () => {
         />
       </Carousel>
     </div>
+  //   <div className="image-slider" style={{
+  //     width: "100px",
+  // height: "100px",
+  // position: "relative",
+  // backgroundColor: "red",
+  // animationName: "example",
+  // animationDuration: "4s",
+      
+  //   }}></div>
   );
 };

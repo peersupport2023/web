@@ -4,6 +4,7 @@ export const CardData_2 = [
     image: "/images/Apurva.png",
     header: "Apurva Tikde",
     description: [
+      ``,
       `Q. Good morning Apurva, we are contacting you from Peer Support. How have you been?
     `,
       `Ans. Good morning to you too, I’ve been doing well.
@@ -78,6 +79,7 @@ export const CardData_2 = [
     The hostel facilities are really good. The boys are provided with single sharing rooms while three girls share a 2 BHK flat. 
     Regarding student activities we have a student driven Equity research fund driven by equity research cell. Here students make their own portfolio and invest money. So, the learnings are applied in real time space. Then E-cell hosts an incubator which guides and helps start-up enthusiasts. 
     `,
+    ``,
     `Port Visits in IIFT: Port Visits are one of the most happening things in IIFT. We are selected to visit different ports around the world like Dubai, Singapore, Mumbai, etc. Here we get a hands-on experience to observe and learn trading activities in detail. How the port operates, what are the certificates, licenses and documents involved, the functioning of the customs department and lot more. 
     There used to be a social awareness program also for two weeks where students take part in various activities in the rural space and assess the situation and other challenges out there.
     `,
@@ -89,7 +91,7 @@ export const CardData_2 = [
     `A. I want to start my own chain of restaurants. Well, I wish to open the First Michelin Star restaurant in India. Not sure if this will work out but looking forward for the same.
     We wish your dream comes true. Thank You so much Nitish for sharing your journey on Peer Support. We believe this will guide many readers out there to prepare for IIFT or in their MBA Journey.
     `,
-    ``,
+    
     `Cheers, to all of you to have patiently read the conversation between our member and Nitish. If any other questions have crossed your mind and needed to be answered, you can reach out to us through our email, or social media handles. You can also join our WhatsApp community to get a golden ticket to all the sessions and webinars we conduct. 
     We post interviews of various MBA graduates. Do follow us for more such content.
     `

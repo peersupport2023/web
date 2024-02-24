@@ -17,8 +17,19 @@ import {
   Icon,
 } from "semantic-ui-react";
 import { Link } from "react-router-dom";
+import { useUserAuth } from "../context/UserAuthContext";
 
 function Mentors() {
+  // const {ment} = useUserAuth();
+
+  // if (!ment) {
+  //   // If services is undefined, return a loading state or an empty div
+  //   return (
+  //     <div className="container">
+  //       <p>Loading mentors...</p>
+  //     </div>
+  //   );
+  // }
   return (
     <>
       <div className="heading" style={{ margin: "1rem 2rem " }}>
@@ -48,23 +59,15 @@ function Mentors() {
               delay: (index / 2) * 0.2 + 0.5,
             }}
           >
-            <Card style={{ height: "20rem", width: "300px" }}>
-              <Image
-                src={item.image}
-                ui={false}
-                style={{ height: "75%", objectFit: "contain" }}
-              />
-              <CardContent style={{ height: "40%" }}>
-                <CardHeader>{item && item.name}</CardHeader>
-                <CardDescription
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                  }}
-                >
-                  {item.college}
-                  <a
+            <div class="card">
+              <div class="profileImage">
+                <img src={item.image} alt="" />
+              </div>
+              <div class="textContainer">
+                <p class="name">{item.name}</p>
+                <p class="profile">{item.college}</p>
+              </div>
+              <a
                     href={`https://www.linkedin.com/in/${item.linkedinUsername}`}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -74,11 +77,12 @@ function Mentors() {
                       style={{ marginLeft: "auto", fontSize: "1.5rem" }}
                     />
                   </a>
-                </CardDescription>
-              </CardContent>
-            </Card>
+            </div>
+            
           </motion.div>
+          
         ))}
+        
         <Box
           sx={{
             width: "100vw",
@@ -87,17 +91,26 @@ function Mentors() {
             alignItems: "flex-start",
             justifyContent: "space-between",
             padding: "0 2rem",
+            columnGap:"5rem",
           }}
         >
-          <button className="text-blacks my-2 font-semibold bg-custom-blue rounded-md p-3 md:p-4 lg:p-3 text-center cursor-pointer">
-            Book A Call
+          <Link to="/">
+          <button data-ripple-light="true"
+                type="button"
+                class="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+            Book A Mock Interview
           </button>
+          </Link>
+          
           <Link to="/MeetMentors">
-            <button className="text-blacks my-2 font-semibold bg-custom-blue rounded-md p-3 md:p-4 lg:p-3 text-center cursor-pointer">
+            <button data-ripple-light="true"
+                type="button"
+                class="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
               Meet all our mentors
             </button>
           </Link>
         </Box>
+        
       </Box>
     </>
   );

@@ -42,7 +42,7 @@ const NavbarComponent = () => {
         <Navbar.Container className="flex items-center justify-between">
           <Navbar.Container
             tag="ul"
-            className="lg:flex hidden items-center justify-between gap-8"
+            className="lg:flex hidden items-center justify-between gap-8 font-black"
           >
             <Navbar.Link linkName="What We Do" />
             <Link to='/roadtomba'>
@@ -55,7 +55,7 @@ const NavbarComponent = () => {
           <Link to='/'>
           <Navbar.Brand className="lg:items-center">
             <img
-              src="/images/favicon_1.png"
+              src="/images/Peer Support.png"
               alt="keep"
               width="140"
               height="100"
@@ -63,8 +63,8 @@ const NavbarComponent = () => {
           </Navbar.Brand>
           </Link>
 
-          <Navbar.Collapse collapseType="sidebar">
-            <Navbar.Container tag="ul" className="flex flex-col gap-5">
+          <Navbar.Collapse collapseType="sidebar" className="">
+            <Navbar.Container tag="ul" className="flex flex-col gap-5 ">
               <Navbar.Link linkName="What We Do" />
               <Link to='/roadtomba'>
               <Navbar.Link linkName="Road To MBA" />
@@ -78,7 +78,7 @@ const NavbarComponent = () => {
               <NavLink to='/resources'>
                 <Navbar.Link linkName="Resources"/>
               </NavLink>
-              <Navbar.Link linkName="Book A Call" />
+              <Navbar.Link linkName="Book A Mock Interview" />
               {!userTokenExists && !accessTokenExists ? (
                 <Link to="/login">
                   <Navbar.Link linkName="Login" />
@@ -102,7 +102,7 @@ const NavbarComponent = () => {
               <Link to='/webinars'>
               <Navbar.Link linkName="Webinars" />
               </Link>
-              <Navbar.Link linkName="Book A Call" />
+              <Navbar.Link linkName="Book A Mock Interview" />
               {!userTokenExists && (
                 <Link to="/login">
                   <Button size="md" type="primary">

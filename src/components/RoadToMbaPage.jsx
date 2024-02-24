@@ -47,12 +47,13 @@ function RoadToMba() {
       </div>
       <Box
         sx={{
-          padding: "1.5rem 1.2rem",
+          padding:"1rem",
           display: "flex",
           flexWrap: "wrap",
           rowGap: "1.2rem",
           columnGap: "1rem",
-          justifyContent: "flex-start",
+          justifyContent: "start",
+          alignItems: "flex-start",
         }}
       >
         {dataArray.map((item, index) => (
@@ -74,12 +75,15 @@ function RoadToMba() {
                   delay: (index / 2) * 0.2 + 0.5,
                 }}
               >
-                <Card onClick={() => setCurrent(item)}>
+               <Card style={{
+                  height: 220,
+                }} onClick={() => setCurrent(item)}>
                   <Image src={item.image} ui={false} />
                   <CardContent>
                     <CardHeader>{item && item.header}</CardHeader>
                   </CardContent>
                 </Card>
+          
               </motion.div>
             }
           >
@@ -91,19 +95,8 @@ function RoadToMba() {
                 <Icon link name="close" onClick={() => setOpen(false)} />
               </ModalActions>
             </ModalHeader>
-            <ModalContent image scrolling>
-              <Image
-                size="medium"
-                src={curr && curr.image}
-                style={{
-                  maxWidth: "100%",
-                  maxHeight: "80vh",
-                  margin: "auto",
-                  '@media (min-width: 1200px)': {
-                    maxWidth: "60%",
-                  },
-                }}
-              />
+            <ModalContent  scrolling>
+              
               <ModalDescription>
                 <p>{mappedDesc}</p>
               </ModalDescription>
