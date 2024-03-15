@@ -32,7 +32,7 @@ export function UserAuthContextProvider({ children }) {
 
   const getServices = async () => {
     try {
-      const response = await fetch(`https://backend-bx4f.onrender.com`, {
+      const response = await fetch(`https://backend-bx4f.onrender.com/api/service`, {
         method: "GET",
       });
       if (response.ok) {
@@ -47,7 +47,7 @@ export function UserAuthContextProvider({ children }) {
 
   const getMentors = async () => {
     try {
-      const response = await fetch(`https://backend-bx4f.onrender.com`, {
+      const response = await fetch(`https://backend-bx4f.onrender.com/ment/mentor`, {
         method: "GET",
       });
       if (response.ok) {
