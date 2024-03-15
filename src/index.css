@@ -3,15 +3,25 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-  height: 100vh;
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding:0;
+  display: flex;
+  justify-content: center;
+
 }
 
 .image-slider{
-  width: 80%;
-  height: 80%;
-  background-size: cover;
-  animation: linear 10s infinite ;
+  width: 100%;
+  height: 90%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: example 10000ms infinite ;
 }
 
 .card {
@@ -70,17 +80,11 @@ body{
   0% {
     background-image: url("/images/Website cat mba  (1).png");
   }
-  25%{
-    background-image: url("/images/Website cat mba .png");
-  }
   50%{
     background-image: url("/images/Website cat mba .png");
   }
-  75%{
-    background-image: url("/images/Website cat mba .png");
-  }
   100%{
-    background-image: "/images/Website cat mba .png";
+    background-image: url("/images/Website cat mba  (1).png");
   }
 }  
   

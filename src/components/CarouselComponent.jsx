@@ -3,7 +3,7 @@ import { Carousel } from "keep-react";
 
 export const CarouselComponent = () => {
   // Calculate the aspect ratio dynamically based on the viewport width
-  const aspectRatio = window.innerWidth >= 768 ? "16/9" : "4 / 3";
+  const aspectRatio = window.innerWidth >= 768 ? "16/9" : "4/3";
 
   return (
     <div style={{  overflow: "hidden", aspectRatio }}>

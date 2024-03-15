@@ -6,27 +6,27 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import { CardData_1 } from "./CardData_1";
-// import { useUserAuth } from "../context/UserAuthContext";
+import { useUserAuth } from "../context/UserAuthContext";
 import "./Button.css";
 const CardComponent = () => {
   const handleClick = (url) => {
     window.open(url, "_blank");
   };
 
-  // const {services} = useUserAuth();
+  const {services} = useUserAuth();
 
-  // if (!services) {
-  //   // If services is undefined, return a loading state or an empty div
-  //   return (
-  //     <div className="container">
-  //       <p>Loading services...</p>
-  //     </div>
-  //   );
-  // }
+  if (!services) {
+    // If services is undefined, return a loading state or an empty div
+    return (
+      <div className="container">
+        <p>Loading services...</p>
+      </div>
+    );
+  }
 
   return (
     <>
-      {CardData_1.map((item, index) => (
+      {services.map((item, index) => (
         <motion.div
           key={index}
           initial={{ opacity: 0, y: 50 }}

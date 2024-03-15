@@ -12,11 +12,21 @@ import {
   CardDescription,
   Icon,
 } from "semantic-ui-react";
-
+import { useUserAuth } from "../context/UserAuthContext";
 import { CardData_3 } from "./CardData_3";
 
 const MeetOurMentor = () => {
-  const dataArray = CardData_3;
+  const {ment} = useUserAuth();
+
+  if (!ment) {
+    // If services is undefined, return a loading state or an empty div
+    return (
+      <div className="container">
+        <p>Loading mentors...</p>
+      </div>
+    );
+  }
+  // const dataArray = CardData_3;
   useEffect(() => {
     // Scroll to the top when ComponentB mounts
     window.scrollTo({
@@ -40,7 +50,7 @@ const MeetOurMentor = () => {
           justifyContent: "space-evenly",
         }}
       >
-        {dataArray.map((item, index) => (
+        {ment.map((item, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 50 }}

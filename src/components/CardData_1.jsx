@@ -9,14 +9,6 @@ export const CardData_1 = [
 
     },
     {
-        id:4,
-        image:'/images/4.png',
-        header:'GD/WAT/PI Mock and Guidance',
-        isUrl:false,
-        description:'Our Mock PI and Guidance session with the current seniors from the college will help you break the ice before an interview giving a better perspective on tackling stressful interview questions. ',
-        btntitle:"Book Your Mock Interview"
-    },
-    {
         id:2,
         image:'/images/2.png',
         header:'SOP and Resume Review',
@@ -32,5 +24,13 @@ export const CardData_1 = [
         isUrl:false,
         description:'We host regular live webinars where mentors from different colleges share their MBA journey and the coveted hacks of cracking an interview through Q&A sessions.',
         btntitle:"Register for your Next Session"
+    },
+    {
+        id:4,
+        image:'/images/4.png',
+        header:'GD/WAT/PI Mock and Guidance',
+        isUrl:false,
+        description:'Our Mock PI and Guidance session with the current seniors from the college will help you break the ice before an interview giving a better perspective on tackling stressful interview questions. ',
+        btntitle:"Book Your Mock Interview"
     },
 ]

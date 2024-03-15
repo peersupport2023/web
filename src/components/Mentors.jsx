@@ -20,16 +20,16 @@ import { Link } from "react-router-dom";
 import { useUserAuth } from "../context/UserAuthContext";
 
 function Mentors() {
-  // const {ment} = useUserAuth();
+  const {ment} = useUserAuth();
 
-  // if (!ment) {
-  //   // If services is undefined, return a loading state or an empty div
-  //   return (
-  //     <div className="container">
-  //       <p>Loading mentors...</p>
-  //     </div>
-  //   );
-  // }
+  if (!ment) {
+    // If services is undefined, return a loading state or an empty div
+    return (
+      <div className="container">
+        <p>Loading mentors...</p>
+      </div>
+    );
+  }
   return (
     <>
       <div className="heading" style={{ margin: "1rem 2rem " }}>
@@ -46,7 +46,7 @@ function Mentors() {
           alignItems: "flex-start",
         }}
       >
-        {CardData_3.slice(0, 4).map((item, index) => (
+        {ment.slice(0, 4).map((item, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 50 }}
