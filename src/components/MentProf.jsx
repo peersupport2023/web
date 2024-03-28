@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 const MentProf = ({ data, services, addOns }) => {
   const [gridColumns, setGridColumns] = useState("1fr");
   const [checkedItems, setCheckedItems] = useState({});
+  const nav = useNavigate();
 
   useEffect(() => {
     // Initialize checkedItems with service/add-on names as keys and false as values
@@ -36,15 +38,15 @@ const MentProf = ({ data, services, addOns }) => {
   };
 
   const getSelectedItems = () => {
-    const selectedItems = [];
-    for (const item in checkedItems) {
-      if (checkedItems[item]) {
-        selectedItems.push(item);
-      }
-    }
-    return selectedItems;
+    return Object.keys(checkedItems).filter(item => checkedItems[item]);
   };
 
+  console.log(getSelectedItems(checkedItems))
+
+  const handleProceedToCheckout = () => {
+    nav("/checkout", { selectedItems: getSelectedItems() });
+  };
+  const selectedItems = ['Service 1', 'Service 2'];
   return (
     <div
       style={{
@@ -183,8 +185,8 @@ const MentProf = ({ data, services, addOns }) => {
             </span>
           </div>
         ))}
-
-        <button className="bg-orange-500 text-white font-bold py-2 px-4 rounded-lg mt-8">
+       <Link to={{ pathname: '/checkout', state: { selectedItems: selectedItems } }}>
+        <div className="bg-orange-500 text-white font-bold py-2 px-4 rounded-lg mt-8">
           Proceed To Checkout
           <svg
             className="w-6 h-6 inline-block ml-2"
@@ -193,7 +195,8 @@ const MentProf = ({ data, services, addOns }) => {
           >
             {/* Cart icon SVG path */}
           </svg>
-        </button>
+        </div>
+        </Link>
         <div>
           <h3>Selected Items:</h3>
           <ul>
