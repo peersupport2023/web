@@ -12,6 +12,7 @@ import Footer from "./components/Footer";
 // import FooterComponent from "./components/Footer";
 import './App.css'
 import MeetOurMentor from "./components/MeetOurMentor";
+import Checkout from "./components/Checkout";
 function App() {
   return (
     <>
@@ -30,6 +31,7 @@ function App() {
       <Route path="/MeetMentors" element={<MeetOurMentor/>}/>
       <Route path="/login" element={<Login/>}/>
       <Route path="/signup" element={<Signup/>}/>
+      <Route path="/checkout" element={<Checkout/>}/>
       </Routes>
       </UserAuthContextProvider>
     </>
