@@ -3,19 +3,7 @@ import AnimatedTitle from "./AnimTitle";
 import { CardData_3 } from "./CardData_3";
 import { motion } from "framer-motion";
 import { Box } from "@mui/material";
-import {
-  ModalHeader,
-  ModalDescription,
-  ModalContent,
-  ModalActions,
-  CardHeader,
-  CardDescription,
-  CardContent,
-  Card,
-  Image,
-  Modal,
-  Icon,
-} from "semantic-ui-react";
+import {Icon} from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import { useUserAuth } from "../context/UserAuthContext";
 
@@ -25,9 +13,14 @@ function Mentors() {
   if (!ment) {
     // If services is undefined, return a loading state or an empty div
     return (
-      <div className="container">
-        <p>Loading mentors...</p>
-      </div>
+      <div class="wrapper">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="shadow"></div>
+    <div class="shadow"></div>
+    <div class="shadow"></div>
+</div>
     );
   }
   return (

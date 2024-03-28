@@ -1,19 +1,10 @@
 import React, { useEffect } from "react";
-
-import Footer from "./Footer";
 import AnimatedTitle from "./AnimTitle";
 import { Box } from "@mui/material";
 import { motion } from "framer-motion";
-import {
-  CardHeader,
-  CardContent,
-  Card,
-  Image,
-  CardDescription,
-  Icon,
-} from "semantic-ui-react";
+import {Icon} from "semantic-ui-react";
 import { useUserAuth } from "../context/UserAuthContext";
-import { CardData_3 } from "./CardData_3";
+import { Link } from "react-router-dom";
 
 const MeetOurMentor = () => {
   const {ment} = useUserAuth();
@@ -21,9 +12,14 @@ const MeetOurMentor = () => {
   if (!ment) {
     // If services is undefined, return a loading state or an empty div
     return (
-      <div className="container">
-        <p>Loading mentors...</p>
-      </div>
+      <div class="wrapper">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="shadow"></div>
+    <div class="shadow"></div>
+    <div class="shadow"></div>
+</div>
     );
   }
   // const dataArray = CardData_3;
@@ -34,7 +30,7 @@ const MeetOurMentor = () => {
       // You can use 'smooth' for smooth scrolling
     });
   }, []);
-
+  console.log({ment})
   return (
     <>
       <div className="m-[2rem]">
@@ -63,13 +59,14 @@ const MeetOurMentor = () => {
               delay: (index / 2) * 0.2 + 0.5,
             }}
           >
-            <div class="card">
-              <div class="profileImage">
+            <Link to={`/services/item/${item._id}`}>
+            <div className="card">
+              <div className="profileImage">
                 <img src={item.image} alt="" />
               </div>
-              <div class="textContainer">
-                <p class="name">{item.name}</p>
-                <p class="profile">{item.college}</p>
+              <div className="textContainer">
+                <p className="name">{item.name}</p>
+                <p className="profile">{item.college}</p>
               </div>
               <a
                     href={`https://www.linkedin.com/in/${item.linkedinUsername}`}
@@ -82,6 +79,7 @@ const MeetOurMentor = () => {
                     />
                   </a>
             </div>
+            </Link>
           </motion.div>
         ))}
       </Box>

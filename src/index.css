@@ -74,6 +74,96 @@ body {
     color: rgb(43, 43, 43);
     letter-spacing: 0.2px;
   }
+
+  .wrapper {
+    width: 200px;
+    height: 60px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .circle {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #161616;
+    left: 15%;
+    transform-origin: 50%;
+    animation: circle7124 .5s alternate infinite ease;
+  }
+  
+  @keyframes circle7124 {
+    0% {
+      top: 60px;
+      height: 5px;
+      border-radius: 50px 50px 25px 25px;
+      transform: scaleX(1.7);
+    }
+  
+    40% {
+      height: 20px;
+      border-radius: 50%;
+      transform: scaleX(1);
+    }
+  
+    100% {
+      top: 0%;
+    }
+  }
+  
+  .circle:nth-child(2) {
+    left: 45%;
+    animation-delay: .2s;
+  }
+  
+  .circle:nth-child(3) {
+    left: auto;
+    right: 15%;
+    animation-delay: .3s;
+  }
+  
+  .shadow {
+    width: 20px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 62px;
+    transform-origin: 50%;
+    z-index: -1;
+    left: 15%;
+    filter: blur(1px);
+    animation: shadow046 .5s alternate infinite ease;
+  }
+  
+  @keyframes shadow046 {
+    0% {
+      transform: scaleX(1.5);
+    }
+  
+    40% {
+      transform: scaleX(1);
+      opacity: .7;
+    }
+  
+    100% {
+      transform: scaleX(.2);
+      opacity: .4;
+    }
+  }
+  
+  .shadow:nth-child(4) {
+    left: 45%;
+    animation-delay: .2s
+  }
+  
+  .shadow:nth-child(5) {
+    left: auto;
+    right: 15%;
+    animation-delay: .3s;
+  }
+  
   
 
 @keyframes example {
@@ -87,5 +177,128 @@ body {
     background-image: url("/images/Website cat mba  (1).png");
   }
 }  
+
+ .card-profile {
+  position: relative;
+  width: 315px;
+  height: 450px;
+  margin: 30px auto;
+  box-shadow: 0 0 100px rgba(0,0,0, .3);
+  border-radius: 10px;
+}
+
+.card-header {
+  position: relative;
+  height: 220px;
+  background-size: cover;
+  background-position: top;
+}
+
+.card-header:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+
+.image-profile {
+  position: absolute;
+  margin-top: 100px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #222;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.card-header-bar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  width: 100%;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0,0,0,0);
+  border: none;
+  overflow: hidden;
+}
+
+.btn-message {
+  /* display: inline-block; */
+  width: 19.37px;
+  height: 16.99px;
+  margin-right: 10px;
+  margin-top: 10px;
+  float: right;
+}
+
+.btn-menu {
+  display: inline-block;
+  width: 19px;
+  height: 12.16px;
+  margin-left: 10px;
+  margin-top: 10px;
+  float: left;
+}
+
+.card-header-slanted-edge {
+  position: absolute;
+  bottom: -3px;
+  z-index: 1;
+  width: 100%;
+  right: 0;
+  left: 0;
+}
+
+.card-body {
+  text-align: center;
+  padding-left: 10px;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-transform: capitalize;
+  margin: 0 auto;
+}
+
+.job-title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 15px;
+  color: #919191;
+}
+
+.bio {
+  font-size: 14px;
+  color: #7B7B7B;
+  font-weight: 300;
+  margin: 10px auto;
+  line-height: 20px;
+}
+
+.social-accounts{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.social-accounts img {
+  width: 15px;
   
+}
+
+.social-accounts a {
+  margin-left: 10px;
+}
+
+.social-accounts a:first-child {
+  margin-left: 0;
+}
 

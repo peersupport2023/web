@@ -16,6 +16,8 @@ import Webinars from "./components/Webinars";
 import Mentors from "./components/Mentors";
 import RoadToMba from "./components/RoadToMbaPage";
 import Resources from "./components/Resources";
+import MentProf from "./components/MentProf";
+import MentorProfile from "./components/MentorProfile";
 function App() {
   useEffect(() => {
     // Scroll to the top when ComponentB mounts
@@ -45,6 +47,7 @@ function App() {
       <Route path="/signup" element={<Signup/>}/>
       <Route path="/roadtomba" element={<RoadToMba/>}/>
       <Route path="/resources" element={<Resources/>}/>
+      <Route path="/services/item/:id" element={<MentorProfile />} />
       </Routes>
       <Footer/>
     </UserAuthContextProvider>
