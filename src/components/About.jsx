@@ -7,52 +7,51 @@ import { motion } from "framer-motion";
 function About() {
   return (
     <>
-    <Box
-          sx={{
-            paddingTop:"2rem",
-            fontFamily:" Roboto, Helvetica, Arial, sans-serif",
-            margin: "2px 2rem",
-            fontSize: { xs: "1.2rem", md: "1.2rem" },
-            fontWeight: "100",
-            textTransform: "capitalize",
-            textAlign: "justify",
-          }}
-        >
-          
-          Welcome to our website, your go-to destination for connecting with
-          experienced mentors who have successfully navigated the same path
-          you're on. Our mentors, drawn from recent batches of your dream
-          college, are here to share their insights and help you navigate
-          through your queries. These mentors offer valuable guidance and
-          clarification on various aspects of exam preparation, interviews, and
-          college life. Currently, our platform specializes in providing
-          services tailored to the field of MBA.
-        </Box>
-      <div className="heading" style={{ margin: "1rem 2rem " }}>
-        <AnimatedTitle name="Who Are We "/>
-      </div>
-      
-        <Box
+      <Box
         sx={{
-          fontFamily:" Roboto, Helvetica, Arial, sans-serif",
+          paddingTop: "4rem",
+          fontFamily: "Roboto, Helvetica, Arial, sans-serif",
           margin: "2px 2rem",
           fontSize: { xs: "1.2rem", md: "1.2rem" },
           fontWeight: "100",
           textTransform: "capitalize",
           textAlign: "justify",
-          
+          lineHeight: "2.125", // Adjust line spacing
         }}
-          
-        >
-          Welcome to Peer Support! Peer Support is an educational consultation
-          platform to connect aspiring students with peers currently enrolled in
-          esteemed colleges. Within our user-friendly portal, mentors from
-          diverse backgrounds come together, providing a unique opportunity for
-          aspirants to connect and engage in meaningful interactions.
-        </Box>
-      
+      >
+        Welcome to our website, your go-to destination for connecting with
+        experienced mentors who have successfully navigated the same path
+        you're on. Our mentors, drawn from recent batches of your dream
+        college, are here to share their insights and help you navigate
+        through your queries. These mentors offer valuable guidance and
+        clarification on various aspects of exam preparation, interviews, and
+        college life. Currently, our platform specializes in providing
+        services tailored to the field of MBA.
+      </Box>
       <div className="heading" style={{ margin: "1rem 2rem " }}>
-        <AnimatedTitle name="Our Vision "></AnimatedTitle>
+        <AnimatedTitle name="Who Are We " />
+      </div>
+
+      <Box
+        sx={{
+          fontFamily: "Roboto, Helvetica, Arial, sans-serif",
+          margin: "2px 2rem",
+          fontSize: { xs: "1.2rem", md: "1.2rem" },
+          fontWeight: "100",
+          textTransform: "capitalize",
+          textAlign: "justify",
+          lineHeight: "2.125", // Adjust line spacing
+        }}
+
+      >
+        Welcome to Peer Support! Peer Support is an educational consultation
+        platform to connect aspiring students with peers currently enrolled in
+        esteemed colleges. Within our user-friendly portal, mentors from
+        diverse backgrounds come together, providing a unique opportunity for
+        aspirants to connect and engage in meaningful interactions.
+      </Box>
+      <div className="heading" style={{ margin: "1rem 2rem " }}>
+        <AnimatedTitle name="Our Vision " />
       </div>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -68,12 +67,13 @@ function About() {
       >
         <Box
           sx={{
-            fontFamily:" Roboto, Helvetica, Arial, sans-serif",
+            fontFamily: "Roboto, Helvetica, Arial, sans-serif",
             margin: "2px 2rem",
             fontSize: { xs: "1.2rem", md: "1.2rem" },
             fontWeight: "100",
             textTransform: "capitalize",
             textAlign: "justify",
+            lineHeight: "2.125", // Adjust line spacing
           }}
         >
           We've initiated this platform to minimize the information asymmetry
@@ -83,10 +83,7 @@ function About() {
         </Box>
       </motion.div>
       <div className="heading" style={{ margin: "1rem 2rem " }}>
-        <AnimatedTitle
-          name="What do we do?
-"
-        ></AnimatedTitle>
+        <AnimatedTitle name="What do we do?" />
       </div>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -102,12 +99,13 @@ function About() {
       >
         <Box
           sx={{
-            fontFamily:" Roboto, Helvetica, Arial, sans-serif",
+            fontFamily: "Roboto, Helvetica, Arial, sans-serif",
             margin: "2px 2rem",
             fontSize: { xs: "1.2rem", md: "1.2rem" },
             fontWeight: "100",
             textTransform: "capitalize",
             textAlign: "justify",
+            lineHeight: "2.3", // Adjust line spacing
           }}
         >
           Navigating the challenging journey of exam preparation for college
@@ -116,7 +114,6 @@ function About() {
           intricacies of interviews and college life, the need for guidance is
           paramount. This is where our platform steps in.
         </Box>
-        
       </motion.div>
     </>
   );

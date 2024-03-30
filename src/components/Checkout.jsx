@@ -23,8 +23,19 @@ const Checkout = () => {
   });
 
   const location = useLocation();
-  const selectedItems = location.state?.selectedItems || [];
-  console.log(selectedItems);  // Log selectedItems to check if data has been passed
+ console.log(location)
+  const [receivedData, setReceivedData] = useState([]);
+
+  useEffect(() => {
+    const queryParams = new URLSearchParams(location.search);
+    const dataString = queryParams.get("data");
+    if (dataString) {
+      const decodedData = JSON.parse(decodeURIComponent(dataString));
+      setReceivedData(decodedData);
+    }
+  }, [location.search]);
+
+  console.log(receivedData);
 
   const [availableTimes, setAvailableTimes] = useState({});
 
@@ -260,9 +271,17 @@ const Checkout = () => {
           <button className="w-full max-w-md rounded-full bg-green-400 p-4 text-white text-xl md:text-2xl">
             Proceed To Payment
           </button>
-          {selectedItems.map((item, index) => (
+          {/* <div>
+            <h2>Selected Items:</h2>
+            <ul>
+              {selectedItems.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </div> */}
+          {/* {selectedItems.map((item, index) => (
         <div key={index}>{item}</div>
-      ))}
+      ))} */}
         </div>
       </div>
     </div>

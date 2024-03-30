@@ -45,6 +45,7 @@ function MentorProfile() {
         { name: 'One-On-One Interaction', price: 'Rs. 99' },
         { name: 'One-On-One Interaction + Mock Interview + Feedback', price: 'Rs. 249' },
         { name: 'One-on-one interaction + Mock Interview + Analysis and Feedback + Re-Mock to analyze the progress', price: 'Rs. 499' },
+        {name:'none'}
       ];
       
       const addOns = [

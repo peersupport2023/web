@@ -50,51 +50,51 @@ export const CardData_2 = [
     image: "/images/Nitish.png",
     header: "Nitish Jain",
     description: [
-    `Nitish Jain is currently pursuing his MBA in International Business (IB) from IIFT, Kolkata. He completed his B.Sc. from Hospitality and Hotel Administration from Institute of Hotel Management, New Delhi. Prior joining to IIFT Kolkata he has worked as a Chef in French Embassy, Ahmedabad. He has also worked as a Facilities Manager in Shakambari Textiles for 1 year. He has also been a Finalist in multiple case competitions at National level and is currently leading the role of Junior Executive Member in Alumni Relations Committee. We had an interesting discussion with Nitish regarding his entire journey to IIFT and how is life now at IIFT for him.
+      `Nitish Jain is currently pursuing his MBA in International Business (IB) from IIFT, Kolkata. He completed his B.Sc. from Hospitality and Hotel Administration from Institute of Hotel Management, New Delhi. Prior joining to IIFT Kolkata he has worked as a Chef in French Embassy, Ahmedabad. He has also worked as a Facilities Manager in Shakambari Textiles for 1 year. He has also been a Finalist in multiple case competitions at National level and is currently leading the role of Junior Executive Member in Alumni Relations Committee. We had an interesting discussion with Nitish regarding his entire journey to IIFT and how is life now at IIFT for him.
     `,
-    `Q. Hello Nitish, welcome to Peer Support! We are glad to have you with us on this interview session. Congratulations for IIFT. So why and when did you think of doing an MBA?
+      `Q. Hello Nitish, welcome to Peer Support! We are glad to have you with us on this interview session. Congratulations for IIFT. So why and when did you think of doing an MBA?
     `,
-    `A. Thank You Peer Support for giving me this opportunity. After my bachelors I have joined as a Chef and then later joined as a Facility manager in Shakambari Textiles. But I have always wanted to open my own chain of restaurants. I was really excited to know the technical side of a business. What entails in the functioning and operation of any business. So, MBA provided me with an opportunity to learn these things in detail along with uplifting my career.
+      `A. Thank You Peer Support for giving me this opportunity. After my bachelors I have joined as a Chef and then later joined as a Facility manager in Shakambari Textiles. But I have always wanted to open my own chain of restaurants. I was really excited to know the technical side of a business. What entails in the functioning and operation of any business. So, MBA provided me with an opportunity to learn these things in detail along with uplifting my career.
     `,
-    `Q. That’s interesting. So, being in a job how did you manage your preparation for CAT and what was the strategy for IIFT in particular?
+      `Q. That’s interesting. So, being in a job how did you manage your preparation for CAT and what was the strategy for IIFT in particular?
     `,
-    `A. Well, from the beginning VARC was my strength. I wrote a mock for CAT and scored 92 percentile in the first attempt. Here I got an idea about my strengths and weaknesses in the CAT paper. I tried to maximize my results in the VARC section. For the other two, Quants was a bit tough for me as I was coming from non-maths background. I tried to read selectively for Quants. I tried to solve those sections which yield more marks first and then used to go to other sections. I have followed teachings of many faculties available over web. Then after giving multiple mocks, I started analyzing the area I need more focus on and gave my maximum time to it. On the CAT Day I messed up the LRDI section by doing a silly mistake but I had managed to perform well in the other two sections scoring 99+.
+      `A. Well, from the beginning VARC was my strength. I wrote a mock for CAT and scored 92 percentile in the first attempt. Here I got an idea about my strengths and weaknesses in the CAT paper. I tried to maximize my results in the VARC section. For the other two, Quants was a bit tough for me as I was coming from non-maths background. I tried to read selectively for Quants. I tried to solve those sections which yield more marks first and then used to go to other sections. I have followed teachings of many faculties available over web. Then after giving multiple mocks, I started analyzing the area I need more focus on and gave my maximum time to it. On the CAT Day I messed up the LRDI section by doing a silly mistake but I had managed to perform well in the other two sections scoring 99+.
     Earlier IIFT used to conduct separate exam for them, but from this year they are going to take through CAT only.
     `,
-    `Q. What do you think the cut-off will be for IIFT in accordance to CAT? Do you think there will be sectional cut-offs or will it be overall cut-offs?
+      `Q. What do you think the cut-off will be for IIFT in accordance to CAT? Do you think there will be sectional cut-offs or will it be overall cut-offs?
     `,
-    `A. As per my knowledge and after interaction with the admin team we can expect the sectional cut-off to be 70+ for all the sections and overall can go to 95-96+. Well, this figure can change a little bit depending on the results but the deviation can be pretty less.
+      `A. As per my knowledge and after interaction with the admin team we can expect the sectional cut-off to be 70+ for all the sections and overall can go to 95-96+. Well, this figure can change a little bit depending on the results but the deviation can be pretty less.
     `,
-    `Q. Tell us about your interview experience in IIFT? 
+      `Q. Tell us about your interview experience in IIFT? 
     `,
-    `A. My interview revolved around the restaurant business about which I did mention in the beginning. They asked me about the technical side of the business like valuation, ratios related financial health, etc. Then they shifted to my work-experience and asked question regarding that. I was also asked to give an extempore on sustainability and ethics. Later they asked my stand on a controversial topic- Is profit maximization more important or maintaining the ethics in a business. 
+      `A. My interview revolved around the restaurant business about which I did mention in the beginning. They asked me about the technical side of the business like valuation, ratios related financial health, etc. Then they shifted to my work-experience and asked question regarding that. I was also asked to give an extempore on sustainability and ethics. Later they asked my stand on a controversial topic- Is profit maximization more important or maintaining the ethics in a business. 
     `,
-    `Q. How is MBA in International Business (IB) different from that of the general MBA or is it on the similar lines as that to general MBA? And what is the general criteria for the course?
+      `Q. How is MBA in International Business (IB) different from that of the general MBA or is it on the similar lines as that to general MBA? And what is the general criteria for the course?
     `,
-    `A. We have the MBA-IB as the flagship two-year course while our New Delhi campus is providing MBA in IB and Business Analytics. The topics for IB is nearly similar with that of general MBA but we have some additional courses like International Trade Operation and Logistics, International Marketing, Finance and Operations which adds the perspective of international trade and business along with the domestic side. Here you can expect learnings around shipping lines, custom offices, trading terminologies at international level and lot more.
+      `A. We have the MBA-IB as the flagship two-year course while our New Delhi campus is providing MBA in IB and Business Analytics. The topics for IB is nearly similar with that of general MBA but we have some additional courses like International Trade Operation and Logistics, International Marketing, Finance and Operations which adds the perspective of international trade and business along with the domestic side. Here you can expect learnings around shipping lines, custom offices, trading terminologies at international level and lot more.
     `,
-    `Q. How is life now at IIFT? What sort of activities are you involved in and how do you manage your academics and social life?
+      `Q. How is life now at IIFT? What sort of activities are you involved in and how do you manage your academics and social life?
     `,
-    `A. IIFT is one of the most revered institutes in management among the corporates. We used to spend a major chunk of time in our class rooms in learning, decoding cases, working on our assignments and projects. Apart from that we indulge in many social activities, play games. We have all the sports facilities available in this 7-acre campus starting from badminton courts to a fully equipped gym. 
+      `A. IIFT is one of the most revered institutes in management among the corporates. We used to spend a major chunk of time in our class rooms in learning, decoding cases, working on our assignments and projects. Apart from that we indulge in many social activities, play games. We have all the sports facilities available in this 7-acre campus starting from badminton courts to a fully equipped gym. 
     The hostel facilities are really good. The boys are provided with single sharing rooms while three girls share a 2 BHK flat. 
     Regarding student activities we have a student driven Equity research fund driven by equity research cell. Here students make their own portfolio and invest money. So, the learnings are applied in real time space. Then E-cell hosts an incubator which guides and helps start-up enthusiasts. 
     `,
-    ``,
-    `Port Visits in IIFT: Port Visits are one of the most happening things in IIFT. We are selected to visit different ports around the world like Dubai, Singapore, Mumbai, etc. Here we get a hands-on experience to observe and learn trading activities in detail. How the port operates, what are the certificates, licenses and documents involved, the functioning of the customs department and lot more. 
+      ``,
+      `Port Visits in IIFT: Port Visits are one of the most happening things in IIFT. We are selected to visit different ports around the world like Dubai, Singapore, Mumbai, etc. Here we get a hands-on experience to observe and learn trading activities in detail. How the port operates, what are the certificates, licenses and documents involved, the functioning of the customs department and lot more. 
     There used to be a social awareness program also for two weeks where students take part in various activities in the rural space and assess the situation and other challenges out there.
     `,
-    `Q. The foreign word is quite prominent in IIFT, so what is situation of the exchange program in IIFT?
+      `Q. The foreign word is quite prominent in IIFT, so what is situation of the exchange program in IIFT?
     `,
-    `A. Students from both the campuses- New Delhi and Kolkata visit foreign universities during the last trimester. We have collaborations with 30+ universities around the world. Here the students have to complete the remaining credits of the trimester. It used to be an enriching experience for the students. 
+      `A. Students from both the campuses- New Delhi and Kolkata visit foreign universities during the last trimester. We have collaborations with 30+ universities around the world. Here the students have to complete the remaining credits of the trimester. It used to be an enriching experience for the students. 
     `,
-    `Q. What are your future goals?`,
-    `A. I want to start my own chain of restaurants. Well, I wish to open the First Michelin Star restaurant in India. Not sure if this will work out but looking forward for the same.
+      `Q. What are your future goals?`,
+      `A. I want to start my own chain of restaurants. Well, I wish to open the First Michelin Star restaurant in India. Not sure if this will work out but looking forward for the same.
     We wish your dream comes true. Thank You so much Nitish for sharing your journey on Peer Support. We believe this will guide many readers out there to prepare for IIFT or in their MBA Journey.
     `,
-    
-    `Cheers, to all of you to have patiently read the conversation between our member and Nitish. If any other questions have crossed your mind and needed to be answered, you can reach out to us through our email, or social media handles. You can also join our WhatsApp community to get a golden ticket to all the sessions and webinars we conduct. 
+
+      `Cheers, to all of you to have patiently read the conversation between our member and Nitish. If any other questions have crossed your mind and needed to be answered, you can reach out to us through our email, or social media handles. You can also join our WhatsApp community to get a golden ticket to all the sessions and webinars we conduct. 
     We post interviews of various MBA graduates. Do follow us for more such content.
-    `
+    `,
     ],
   },
   {
@@ -194,7 +194,7 @@ export const CardData_2 = [
       `,
       `A.) Practice a good number of mocks to analyse your weaker sections and make a good lot of friends who would not only help you for your exams but also keep motivating you to achieve greater heights.
       Cheers, to all of you to have patiently read the conversation between our member and Sambit. What are some other questions that crossed your mind and needed to be answered? Do drop below as we would curate them for you. We post interviews of various MBA graduates. Do follow our social media pages.
-      `
+      `,
     ],
   },
   {
@@ -234,8 +234,162 @@ export const CardData_2 = [
       `6.)  What are your plans after completing your MBA?
       `,
       `A.) : I am looking forward to growing and elevating my career in the corporate domain. `,
-      
     ],
   },
- 
+  {
+    id: 6,
+    image: "/images/Ankit Aryan.png",
+    header: "Ankit Aryan",
+    description: [
+      `In an engaging conversation with Ankit Aryan, currently pursuing his MBA at IIM Kashipur. Ankit completed his B.A. Hons. in English from Amity University, Noida. Ankit worked closely with Aero-Wings a Drone Start-up based out of Patna that looks after illicit liquor supply in Bihar. We uncovered a fascinating narrative that traverses his background, CAT preparation, and his subsequent transition into the world of business studies. Let's dive into the inspiring account of Ankit's journey:`,
+      `Q. Hello Ankit, can you brief me a little about yourself?
+      `,
+      `A.) Ankit hails from Patna, Bihar, and has completed his schooling and academics over there. He then joined B.A. in English to complete his undergrads and passed out in the year 2022 from Amity University with flying colors. He then worked for six months with a drone-based start-up Aerowings Technologies and coordinated with the excise department.
+
+      `,
+      `Q. Ankit this question might have popped up in every interview you gave, so once again, why an MBA when you were already into a decent job at Aero-Wings and had undergrads in English Honours? Moreover, students with English Honours have an inclination toward UPSC, so what’s your take on that?
+
+      `,
+      `A.) Yeah, that’s well directed, I did think of UPSC but what made me pause was my age, which was 25 at that time and UPSC students need to have rigorous practice over years before taking the exams which I didn’t.  Moreover, students with a B.A. degree would end up with an M.A. and then go for a lectureship which didn’t inspire me a lot. But I love English and I do read novels in my spare time. Finally, an MBA has a better job aspect in the present market so I decided to pursue it.
+      
+      `,
+      `Q. How did you manage your job as well as your preparation for CAT?
+      `,
+      `Ans) My preparation was not easy at all. Initially, I was at my college and managing preparation with my academics was way too difficult. Even, at my work it was not a purely nine-to-five job as I was in the start-up field. I used to get calls at 10 or 11 PM for work. Sometimes I had to travel to different districts but I got the support from my family and friends. They backed me in my tough times which eventually helped me in my preparation.
+      
+      `,
+      `Q. What are the resources you followed for CAT?`,
+      `A.) I completed my honors and came home on 20th May 2022 and then I took admission at Career Forum, Patna along with having my job side-by-side. I used to have offline coaching 5 days a week from 11 a.m. to 1 p.m. Moreover, I have watched videos of Rodha, Bala Subramanian of the 2-IIM and Crack-U Previous Year Question series. I was fortunate enough that I got a good set of teachers who helped me every time I had a doubt. I used to give offline mocks and scored a good percentile in all sets. Also, since I hadn’t solved Maths for a long time, I put in some extra effort to get through it.
+      `,
+      `Q. How was the CAT exam?
+      `,
+      `A.) See, the CAT exam is very unpredictable as it is conducted in different slots. So I appeared in Slot-1 in 2022 which is by far the most difficult paper set for CAT, & what happened with me is I was pretty confident about my VARC section. Even in the mocks I used to score 98 or 99 percentile but on D-day it didn’t favour me and made some silly mistakes losing up marks and ended up with a 96 percentile in CAT.
+      
+      `,
+      `Q. Ankit, from what colleges did you get a call?
+
+      `,
+      `A.) I had filled almost all IIM’s and IIT’s. I didn’t have a call from the BLACKI & The first college I was called up to was IIM Shillong and I converted it. Next, I had a call for the IIM-CAP application and I went in for the interview. I have converted SCMHRD, NMIMS Mumbai, IIM Kashipur, IIM Sirmaur, and IIM Nagpur. `,
+      `Q. Great, Ankit how was your interview in these colleges and what type of questions did they ask?`,
+      `A.) See IIM-CAP provides you with an application that is divided into 2 sections, one is Achievements subdivided into Extra-Curricular and Co-Curricular and the other is Hobbies. So generally, they frame questions out of these. 
+      Regarding experience, I had different experiences in different interviews:
+      SCMHRD- It completely revolved around my work experience.
+      SIBM- Since I was from Amity University, Noida campus they asked my take on the freebies as that time ‘freebies’ was a hot topic in Delhi.
+      IIM Shillong- Hailing from Bihar, they have asked me about Nitish Kumar and also asked why good Orthopaedic doctors hail from Bihar.
+      NMIMS- This was a pressure interview for me. They asked why I chose English honors despite not having excellent marks in English.
+      They grilled me by asking, since you are not much in mathematics, how come you handle the analytics in an MBA. Then they asked Why an MBA. The purpose of this interview is to assess how calm and well-composed you are in answering stressful questions.
+      IIM CAP: What is the currency of Syria?
+      If the parents are in business, why not business, and why MBA?
+      A couple of Math questions on Compound Interest. Current affairs and my goal 5 years down the lane. What have you learned in English hons. and how is this gonna help you in your MBA?
+      There were graduation-based questions on subjects. Since I have mentioned gymming as my hobby, they asked me the difference between Weightlifting and Powerlifting.
+      `,
+      `Q. What will be your suggestions to the aspirants regarding the PI thing?`,
+      `Ans. Interviews are unpredictable. I would suggest everyone to prepare ample no. of mocks may it be with an institute or with your peers preparing for the same. Do prepare for your extracurriculars, current affairs, work experience, undergraduate subjects, the specialization you are looking for in an MBA & hobbies. Also, when mentioning specialization do a bit of research on it, because they might ask questions about it.`,
+      `Q.  Well Ankit, how did you prepare for the PI thing?`,
+      `A.) For GDPI I have taken help from TIME Patna. There I used to attend their sessions and ask all my queries. I and my friends used to take a mock interview among us. The one who is going for an interview next becomes an interviewee and the others become the interviewers. Then we used to ask a variety of questions along with discussing the answers. Since, every second a new thing happens in this world and it is practically impossible for you to take note of it, so through discussions, you can cover it.`,
+      `Q.  Ankit, how’s the Start-up culture and Clubs scenario at IIM-Kashipur?`,
+      `A.) Yeah, we have a very good start-up culture over here with an event named Uthistha where 400-500 start-ups will come and showcase their projects and the top 10 will be funded by the Uttarakhand Government in association with IIM-K. To the club thing yes like other colleges there are various sports as well as co-curricular clubs for the students to relax after a busy schedule.
+      `,
+      `Q. So, Ankit can you shed light on the internships and what are your goals?`,
+      `A.) Indeed we have good companies providing decent internships to the students, and it starts from just 15-20 days after your admissions. The competition is high and you have to be ready to grab any opportunity that comes your way. I am very much interested in Finance and looking forward to making my career in it.
+      `,
+      `Q. Lastly, Ankit your piece of advice to the readers out there?
+      `,
+      `A.) See, we always say Mocks are a mirror to the real exam and that indeed is but you can never predict the CAT exam. Try to solve a good number of mocks and take part in discussions with your peers. On the D-Day or during the Interview, go with a fresh mind and if at any point you feel that you have made some mistakes in any part, don’t get stuck and focus on the future sections ahead.`,
+      `Cheers, to all of you to have patiently read the conversation between our member and Ankit. We will very soon be releasing an article pertaining to the IIM-CAP process. What are some other questions that crossed your mind and needed to be answered? Do drop below as we would curate them for you. We post interviews of various MBA graduates. Do follow us on our social media pages.`,
+    ],
+  },
+  {
+    id: 6,
+    image: "/images/Vaishnavi Chavan.png",
+    header: "Vaishnavi Chavan",
+    description: [
+      `In an engaging conversation with Vaishnavi, currently pursuing her MBA at FMS Delhi. Vaishnavi completed her Bachelor of Capital Markets from the Bombay Stock Exchange Institute, Mumbai. Vaishnavi worked closely with Morningstar, based out of Mumbai as a Research Analyst. We uncovered a fascinating narrative that traverses her background, CAT preparation, and her subsequent transition into the world of business studies. Let's dive into the inspiring account of Vaishnavi's journey:`,
+      `Q.) Hey Vaishnavi, can you briefly describe yourself?`,
+      `A.) Vaishnavi hails from Mumbai and has completed her schooling and academics over there. She then joined the Bombay Stock Exchange Institute to complete her Bachelor’s in capital markets and passed out in the year 2020 with flying colors.`,
+      `Q.) Vaishnavi this question might have popped up in every interview you have attended, yet why an MBA when you were already into a decent job at Morningstar?`,
+      `A.) See, MBA was in the back of my mind as I always wanted to know the business side of the financial knowledge that I had gained in my bachelor's. At Morningstar, I was working as a Data Research Analyst which dealt majorly with the technical side. So I decided to appear for the CAT and pursue an MBA to assist me in exploring the different aspects of Finance.`,
+      `Q.) What are the resources you followed for CAT?`,
+      `A.) I used a lot of online resources, and books, and took materials of classes that were available online for free. For the mock series, I referred to the IMS mock series which proved to be very helpful. I was always good at the VARC and DI part but I had to improve my Quants and with Mocks I analyzed my mistakes and prepared for the D-day.`,
+      `Q.) How was the CAT exam?`,
+      `A.)I was very good at VARC and LRDI but Quants was my weaker section. However, I tried to devote equal importance to all three sections with some special attention to Quants. On the exam day, VARC and LRDI went pretty well for me, however, I got stuck with QA. The overall result was nice and I got selected for FMS.
+      `,
+      `Q.) Vaishnavi, from which all colleges did you get a call?`,
+      `A.) I got a call from FMS, IIM Indore, IIM CAP, and other IIMs except for IIM B, C, A, L, and K.
+      `,
+      `Q.) Great, Vaishnavi, how was your interview experience in different colleges?`,
+      `A.) See, in most of the other Interviews, the questions revolved around my work at Morningstar, the generic question of Why MBA, my role as a financial analyst in Morningstar, and since Morningstar is a US company, they asked about terminologies that are used in the US and its analogous terminology in India
+      `,
+      ``,
+      `Well for the FMS, it was different. They did not ask me any questions about my work experience.  They had my career mark sheets and asked me about my bachelor subjects, and some personality-based questions. FMS has this 1 min Extempore talk on a topic they provide you. Moreover, they asked me questions on Excel functions, which I answered confidently even if not all of them were correct. If you don’t know any answer, try to be calm and handle it with confidence. 
+      `,
+      `Q.) Alright Vaishnavi, How is life now at FMS?`,
+      `A.) FMS doesn’t provide hostel facilities, so you can get your PG or flat within in 2 KM radius of the college. We start our day with 9 AM classes and the classes continue till 4 PM. Along with that, we have many other activities like Case Competitions, Projects, Guest lectures, and the very important one- SIP preparation. Life used to be hectic as well as fun filled with lots of learning.`,
+      `Q.) Vaishnavi, FMS is known as the Mecca of Marketing. Could you detail the USPs of FMS?`,
+      `A.) Yeah, sure. FMS is considered to be among the Top B-Schools in India and the world for Marketing. However, being my major in Finance I can say that you also get a very good exposure for finance with Investment Banking and Corporate Finance roles. `,
+      ``,
+      `For promoting Entrepreneurship, FMS has a very interesting Placement holiday policy where you can start your venture by deferring placements. They give you a time of 2 years. In these two years, if you can establish your own business and start earning profits then you can continue with it. However, if you are not successful you can come after two years to the college to sit for placements. Moreover, the ROI of FMS is the highest among other top B-schools.`,
+      `Q.) What are Your future goals and where do you see yourself in the next 5 years?`,
+      `A.) I would like to upscale myself and pursue my career in either investment banking or corporate finance down the lane.`,
+      `Q.) Surely! Wish you all the best for that and before ending this session, Your words of wisdom for the readers out there?`,
+      `A.) Prepare consistently for all three sections as you might land in problems if your favorite section gets tough on exam day. Moreover, give plenty number of mocks. Even if you have not completed the syllabus, do give mocks to know the type and pattern of questions you can expect in the examination. While nearing the exam, try to increase the number of mocks and start analyzing them. Wishing everyone all the best for their preparation. `,
+      `Cheers to all of you to have patiently read the conversation between our member and Vaishnavi. What are some other questions that crossed your mind and needed to be answered? Do drop below as we would curate them for you. We post interviews of various MBA graduates. Check out our website and kindly follow us on Instagram and Linkedin for more such content.
+`,
+    ],
+  },
+  {
+    id: 6,
+    image: "/images/Sujeet Chaubey.png",
+    header: "Sujeet Chaubey",
+    description: [
+      `In an engaging conversation with Sujeet Chaubey, currently pursuing his MBA at IIM Bodhgaya. Sujeet hails from Varanasi and has completed his graduation in Mechanical Engineering from the University of Mumbai. Sujeet worked as a Solar Engineer at Panasonic before joining as a Renewable Energy Consultant at Becquer Energy. He joined IIM Bodhgaya in the year 2022, however, how cracking CAT along with a job schedule was very challenging for him. So let’s hear from Sujeet how he managed to do it.`,
+      `Q. Hello Sujeet, Good Evening. I am Rajiv from Peer Support. We heartily welcome you to Peer Support for the ‘Road to MBA’ talk. So let’s start with a brief introduction about yourself.
+      `,
+      `A.) Sujeet hails from Varanasi, Uttar Pradesh, and has completed his schooling and academics from Mumbai. He completed his graduation in Mechanical Engineering and passed out in the year 2018 from the University of Mumbai. He then worked with Panasonic for 16 months as a Solar Engineer and then joined Becquer Energy as a Renewable Energy Consultant. Becquer Energy is a Singapore-based energy firm and being a consultant Sujeet has to work directly with clients based inside and outside of India. After that, he joined IIM Bodhgaya in 2022.`,
+      `Q. When and Why did you decide to join an MBA?`,
+      `A.) My job as a consultant gave me a better understanding of a company's Financial and strategic aspects. I thought of delving more into this field and wanted to learn management. There I decided to go for a full-time MBA. I wrote my first attempt at CAT in 2020. I took a crash course from Elites Grid for 3 months for preparation and followed mocks from TIME. I secured a 98.5 percentile. I was very optimistic about converting only BLACKIS but only got calls for the elite program of IIM Kozhikode and IIM Lucknow. I appeared for the second time in 2021 and secured 97.5 percentile. I have received my first call from IIM Vizag and then my CAP call.
+      `,
+      `Q. How was your interview experience for both years?`,
+      `A.) Let me start with the recent one:`,
+      ``,
+      `CAP interview experience:`,
+      ``,
+      `The interview was online as we were at the end zone of the COVID. They asked me questions about COVID. Then my entire interview revolved around Renewable energy- How renewable energy is going to help India, and what we were doing as a company.`,
+      ``,
+      `Then they shifted to my resume and asked questions on the different pointers mentioned. I have also faced some questions about academics. Being a Mechanical Engineer I was asked about Entropy and thermodynamics.`,
+      ``,
+      `Then they asked me whether I would repeat CAT to which I replied with a smile that I was done with this exam and interview things.`,
+      ``,
+      `Past- Interview Experience:`,
+      ``,
+      `Since I have mentioned about Marathon, they asked me questions about what type of marathon I have done and they even asked about the Current affairs based out of marathons. As the TCS marathon has happened recently, they even asked about that too. Then the interview revolved around my work-ex and the pointers mentioned in the application form.`,
+      `Q.) That was insightful. We saw your profile and observed that you have won many case competitions and have also been a finalist in some of them. So what used to be your strategy around case competitions?`,
+      `A.) Ok first of all I used to segregate in all the competitions I wanted to take part in. There used to be 120 corporate case competitions every year and I generally take part in corporate case competitions. From the 120 we used to be eligible in 38+ case competitions, from which I used to select 16-17 based on my skillset. I also used to take care that no two case competitions collide in their timeline.
+      `,
+      ``,
+      `Then I try to get a good team and make sure to give my best in the completion of the activities.`,
+      ``,
+      `The first round used to be a Quiz round and we used to solve it as a Team. This used to be an easy part. Then comes the round of PPTs. Here you have very little time to grab the attention of the evaluator. So you have to focus on some strategies like going with the color code of the company, keeping visible fonts, and use of data and logic with interpretations instead of writing long passages.
+      `,
+      ``,
+      `In the final round, you will have time and platform to put down your perspective and utilize this to the maximum to share your viewpoint.`,
+      `Q.) Learned a lot about case competitions now, thank you! So now how is life at IIM Bodhgaya?
+      `,
+      `A.) IIM Bodhgaya offers a diverse range of courses. Along with core MBA, we have Digital Business Management(DBM) and Hospital and Health care management (HHM) students with us. We have also this IPM program along with Ph.D. programs. So we get to interact and learn with people from diverse backgrounds. `,
+      ``,
+      `Bodhgaya is one of the prime locations in Bihar and it is growing at a rapid rate. We are also tying up various PSUs, and the Bihar government to work on multiple projects.
+      `,
+      ``,
+      `We have our academic, cultural, and sports committees as used to be in regular B-Schools. Our annual fest Elegante just completed its 6th edition. Even if the weather is extreme the campus used to be lively and active every time with various activities.`,
+      `Q.) How was your preparation strategy and what would you suggest to our readers regarding the CAT preparation and interviews?
+      `,
+      
+      `A.) My preparation schedule used to be very erratic because of my job. I have to attend multiple meetings along with international trips. But I used to take out my time to prepare 2-3 hours on the basics. I have taken a crash course from Elites Grid and have subscribed for TIME mocks. I used to analyze mocks to know my strengths and weaknesses. I would suggest giving an ample amount of mocks and analyzing them. `,
+      ``,
+      `For the interview, I took the help of two of my seniors from TISS and SPJIMR who used to guide me and also helped me with my mock interviews. I would suggest preparing Extracurriculars, Work ex, Undergraduate subjects, Current affairs, and hobbies. You can also mention your interest in any Specialisation. However, when mentioning Specialisation do a bit of research on it, because that might favor you or backfire you.
+      `,
+      `Cheers to all of you to have patiently read the conversation between our member and Sujeet. What are some other questions that crossed your mind and needed to be answered? Do drop below as we would curate them for you. We post interviews of various MBA graduates. Check out our website and kindly follow us on Instagram and Linkedin for more such content.`,
+      
+    ]
+  }
 ];

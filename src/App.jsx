@@ -4,7 +4,7 @@ import NavbarComponent from "./components/NavbarComponent";
 import { CarouselComponent } from "./components/CarouselComponent";
 import About from "./components/About";
 import Services from "./components/Services";
-import ModalExampleContentImage from "./components/RoadToMBA";
+// import ModalExampleContentImage from "./components/RoadToMBA";
 import Login from "./components/Login";
 import Signup from "./components/SignUp";
 import { UserAuthContextProvider } from "./context/UserAuthContext";
@@ -12,13 +12,15 @@ import Footer from "./components/Footer";
 // import FooterComponent from "./components/Footer";
 import "./App.css";
 import MeetOurMentor from "./components/MeetOurMentor";
-import Webinars from "./components/Webinars";
+// import Webinars from "./components/Webinars";
 import Mentors from "./components/Mentors";
-import RoadToMba from "./components/RoadToMbaPage";
+import RoadToMba from "./components/RoadToMBA";
 import Resources from "./components/Resources";
 import MentProf from "./components/MentProf";
 import MentorProfile from "./components/MentorProfile";
 import Checkout from "./components/Checkout";
+import ModalCard from "./components/RoadToMbaPage";
+import Web from "./components/Web";
 function App() {
   useEffect(() => {
     // Scroll to the top when ComponentB mounts
@@ -39,16 +41,16 @@ function App() {
               <CarouselComponent />
               <About />
               <Services />
-              <ModalExampleContentImage />
+              <RoadToMba isHomePage={true} />
               <Mentors />
             </>
           }
         />
-        <Route path="/webinars" element={<Webinars />} />
+        <Route path="/webinars" element={<Web />} />
         <Route path="/MeetMentors" element={<MeetOurMentor />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/roadtomba" element={<RoadToMba />} />
+        <Route path="/roadtomba" element={<RoadToMba isHomePage={false}/>} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/services/item/:id" element={<MentorProfile />} />

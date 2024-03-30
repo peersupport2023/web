@@ -302,3 +302,23 @@ body {
   margin-left: 0;
 }
 
+.card2 {
+  padding: 1rem;
+  width: 40rem;
+  min-height: 270px;
+  border-radius: 20px;
+  background: #e8e8e8;
+  box-shadow: 5px 5px 6px #dadada,
+               -5px -5px 6px #f6f6f6;
+  transition: 0.4s;
+}
+
+.card-image2 {
+  min-height: 270px;
+  border-radius: 20px;
+  min-width: 35rem;
+  background-color: #c9c9c9;
+  border-radius: 15px;
+  box-shadow: inset 8px 8px 10px #c3c3c3,
+            inset -8px -8px 10px #cfcfcf;
+}
