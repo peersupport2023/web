@@ -1,6 +1,7 @@
+
 .time-grid-selector {
     display: flex;
-    align-items: flex-start;
+    flex-direction: row;
   }
   
   .calendar-container {
@@ -8,9 +9,19 @@
   }
   .react-calendar
   {
-    width: 500px; 
+    width: 500px;  
   }
-  
+  .react-calendar__tile--now {
+    background: #ffff76 !important;
+  }
+  .react-calendar__tile--active {
+    background: #006edc !important;
+    color: white;
+}
+
+ 
+
+
   .time-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -22,14 +33,15 @@
   .time-slot {
     font:inherit;
     font-size: 0.833rem;
-    border: 1px solid greenyellow;
+    border: .5px solid black;
     border-radius: 20px;
-    background-color: white;
+    background-color: white ;
     cursor: pointer;
   }
+
   
   .time-slot.selected {
-    background-color: rgba(27, 198, 255, 0.9);
+    background-color: rgba(27, 198, 255, 0.9) ;
     border-color: none;
     color: #ffffff;
   }
@@ -38,4 +50,22 @@
     background-color: #f0f0f0;
     cursor: not-allowed;
   }
-  
+  @media screen and (max-width: 1025px) {
+    .time-grid-selector {
+      flex-direction: column;
+      align-items: center;
+    }
+    .calendar-container {
+      margin-right: 0;  
+    }
+    .react-calendar {
+      width: var(--calendar-width); 
+    }
+    
+    .time-grid {
+      width: var(--calendar-width); 
+    }
+  }
+  @media screen and (max-width: 1025px) {
+ 
+  }
