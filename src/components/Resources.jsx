@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import AnimatedTitle from "./AnimTitle";
 import { Box, Paper } from "@mui/material";
 import { CardContent, Card, Icon, Button } from "semantic-ui-react";
@@ -21,6 +21,13 @@ function Resources() {
   const [open, setOpen] = React.useState(false);
   const [curr, setCurrent] = React.useState();
   const iframeRef = React.useRef(null);
+  useEffect(() => {
+    // Scroll to the top when ComponentB mounts
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // You can use 'smooth' for smooth scrolling
+    });
+  }, []);
   return (
     <>
       <div className="heading" style={{ margin: "2rem" }}>

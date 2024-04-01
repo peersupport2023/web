@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import React, { useState } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import "./TimeGridSelector.css";
@@ -22,41 +21,15 @@ const Checkout = () => {
     fresherOrWorkEx: "",
   });
 
-  const location = useLocation();
- console.log(location)
-  const [receivedData, setReceivedData] = useState([]);
+  console.log(selectedDate);
+  console.log(selectedTime);
+  console.log(formData);
 
-  useEffect(() => {
-    const queryParams = new URLSearchParams(location.search);
-    const dataString = queryParams.get("data");
-    if (dataString) {
-      const decodedData = JSON.parse(decodeURIComponent(dataString));
-      setReceivedData(decodedData);
-    }
-  }, [location.search]);
-
-  console.log(receivedData);
-
-  const [availableTimes, setAvailableTimes] = useState({});
-
-  useEffect(() => {
-    // Fetch available time slots from an API or static data
-    const fetchAvailableTimes = async () => {
-      try {
-        // Replace this with your actual API call or static data
-        const response = {
-          "2024-03-28": ["10:00", "11:00", "14:00", "15:00"],
-          "2024-03-29": ["09:00", "12:00", "16:00", "18:00"],
-          "2024-03-30": ["10:00", "13:00", "17:00", "19:00"],
-        };
-        setAvailableTimes(response);
-      } catch (error) {
-        console.error("Error fetching available time slots:", error);
-      }
-    };
-
-    fetchAvailableTimes();
-  }, []);
+  const availableTimes = {
+    "2024-03-28": ["10:00", "11:00", "14:00", "15:00"],
+    "2024-03-29": ["09:00", "12:00", "16:00", "18:00"],
+    "2024-03-30": ["10:00", "13:00", "17:00", "19:00"],
+  };
 
   const formatDate = (date) => date.toISOString().split("T")[0];
 
@@ -91,14 +64,15 @@ const Checkout = () => {
   );
 
   return (
-    <div className="container mx-auto px-4">
-      <div className="max-w-4xl mx-auto">
-        <div className="flex flex-col ">
+    <div className="">
+      <div
+        className="w-3/4 mx-auto 
+            "
+      >
+        <div className="flex flex-col">
           <div className="time-grid-selector justify-center mt-10 flex-col md:flex-row mx-5 my-5">
-            <div className="calendar-container mb-4 md:mb-0 md:mr-4">
-              <h1 className="text-xl font-semibold mb-2">
-                Choose your meeting date:
-              </h1>
+            <div className="calendar-container">
+              <h1>Choose your meeting date:</h1>
               <Calendar
                 onChange={handleDateChange}
                 value={selectedDate}
@@ -106,17 +80,13 @@ const Checkout = () => {
               />
             </div>
             <div className="flex flex-col md:items-center">
-              <h1 className="text-xl font-semibold mb-2">
-                Book from the available time slots:
-              </h1>
-              <div className="time-grid grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2">
+              <h1>Book from the available time slots:</h1>
+              <div className="time-grid">
                 {allHours.map((hour, index) => (
                   <button
                     key={index}
-                    className={`time-slot py-2 rounded ${
-                      selectedTime === hour
-                        ? "bg-blue-500 text-white"
-                        : "bg-gray-200"
+                    className={`time-slot ${
+                      selectedTime === hour ? "selected" : ""
                     }`}
                     onClick={() => handleTimeSelect(hour)}
                     disabled={
@@ -129,8 +99,7 @@ const Checkout = () => {
               </div>
             </div>
           </div>
-
-          <div className="mt-10 max-w-2xl w-full ">
+          <div className="mt-10 mx-5 md:ml-20 max-w-full md:max-w-[1441px]">
             <form action="" className="">
               <div className="mb-4">
                 <input
@@ -140,7 +109,7 @@ const Checkout = () => {
                   value={formData.fullName}
                   onChange={handleInputChange}
                   required
-                  className="px-5 py-3 w-full border border-gray-300 rounded-lg"
+                  className="input-field"
                 />
               </div>
               <div className="mb-4">
@@ -151,7 +120,7 @@ const Checkout = () => {
                   value={formData.email}
                   onChange={handleInputChange}
                   required
-                  className="px-5 py-3 w-full border border-gray-300 rounded-lg"
+                  className="input-field"
                 />
               </div>
               <div className="mb-4">
@@ -162,7 +131,7 @@ const Checkout = () => {
                   value={formData.contactNumber}
                   onChange={handleInputChange}
                   required
-                  className="px-5 py-3 w-full border border-gray-300 rounded-lg"
+                  className="input-field"
                 />
               </div>
               <div className="mb-4">
@@ -173,10 +142,10 @@ const Checkout = () => {
                   value={formData.catPercentile}
                   onChange={handleInputChange}
                   required
-                  className="px-5 py-3 w-full border border-gray-300 rounded-lg"
+                  className="input-field"
                 />
               </div>
-              <div className="mb-4 flex">
+              <div className="mb-4 flex flex-wrap">
                 <input
                   type="number"
                   placeholder="VARC"
@@ -184,7 +153,7 @@ const Checkout = () => {
                   value={formData.varc}
                   onChange={handleInputChange}
                   required
-                  className="px-5 py-3 w-1/3 mr-2 border border-gray-300 rounded-lg"
+                  className="input-field mr-2 mb-2 md:mb-0"
                 />
                 <input
                   type="number"
@@ -193,7 +162,7 @@ const Checkout = () => {
                   value={formData.lrdi}
                   onChange={handleInputChange}
                   required
-                  className="px-5 py-3 w-1/3 mr-2 border border-gray-300 rounded-lg"
+                  className="input-field mr-2 mb-2 md:mb-0"
                 />
                 <input
                   type="number"
@@ -202,7 +171,7 @@ const Checkout = () => {
                   value={formData.quants}
                   onChange={handleInputChange}
                   required
-                  className="px-5 py-3 w-1/3 border border-gray-300 rounded-lg"
+                  className="input-field"
                 />
               </div>
               <div className="mb-4">
@@ -213,7 +182,7 @@ const Checkout = () => {
                   value={formData.category}
                   onChange={handleInputChange}
                   required
-                  className="px-5 py-3 w-full border border-gray-300 rounded-lg"
+                  className="input-field"
                 />
               </div>
               <div className="mb-4">
@@ -224,11 +193,11 @@ const Checkout = () => {
                   value={formData.gender}
                   onChange={handleInputChange}
                   required
-                  className="px-5 py-3 w-full border border-gray-300 rounded-lg"
+                  className="input-field"
                 />
               </div>
               <div className="mb-4 flex items-center">
-                <label htmlFor="resume" className="mr-5 text-lg">
+                <label htmlFor="resume" className="mr-2 text-xl">
                   Upload Your Current Resume:
                 </label>
                 <input
@@ -237,11 +206,10 @@ const Checkout = () => {
                   name="resume"
                   onChange={handleFileChange}
                   required
-                  className="border border-gray-300 rounded-lg "
                 />
               </div>
               <div className="mb-4 flex items-center">
-                <label htmlFor="applicationForm" className="mr-4 text-lg">
+                <label htmlFor="applicationForm" className="mr-2 text-xl">
                   Upload Your Application Form For College:
                 </label>
                 <input
@@ -250,7 +218,6 @@ const Checkout = () => {
                   name="applicationForm"
                   onChange={handleFileChange}
                   required
-                  className="border border-gray-300 rounded-lg "
                 />
               </div>
               <div className="mb-6">
@@ -261,27 +228,17 @@ const Checkout = () => {
                   value={formData.fresherOrWorkEx}
                   onChange={handleInputChange}
                   required
-                  className="px-5 py-3 w-full border border-gray-300 rounded-lg"
+                  className="input-field"
                 />
               </div>
             </form>
           </div>
-        </div>
-        <div className="w-full flex items-center justify-center mb-5 mt-5">
-          <button className="w-full max-w-md rounded-full bg-green-400 p-4 text-white text-xl md:text-2xl">
-            Proceed To Payment
-          </button>
-          {/* <div>
-            <h2>Selected Items:</h2>
-            <ul>
-              {selectedItems.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          </div> */}
-          {/* {selectedItems.map((item, index) => (
-        <div key={index}>{item}</div>
-      ))} */}
+
+          <div className="w-full flex items-center justify-center mb-5 mt-5">
+            <button className="w-1/2 rounded-full bg-green-400 p-4 text-white text-3xl">
+              Proceed To Payment
+            </button>
+          </div>
         </div>
       </div>
     </div>

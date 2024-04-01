@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Webinars from "./Webinars";
 
 function Web() {
@@ -50,6 +50,13 @@ function Web() {
       ],
     },
   ];
+  useEffect(() => {
+    // Scroll to the top when ComponentB mounts
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // You can use 'smooth' for smooth scrolling
+    });
+  }, []);
   return (
     <div>
       <Webinars webinars={webinarData} />

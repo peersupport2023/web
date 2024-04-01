@@ -303,22 +303,136 @@ body {
 }
 
 .card2 {
+  margin: 1rem;
   padding: 1rem;
-  width: 40rem;
-  min-height: 270px;
+  width: 90%;
+  max-width: 30rem;
+  height: auto;
+  display: flex;
+  justify-content: center;
   border-radius: 20px;
   background: #e8e8e8;
-  box-shadow: 5px 5px 6px #dadada,
-               -5px -5px 6px #f6f6f6;
-  transition: 0.4s;
+  box-shadow: 5px 5px 6px #dadada, -5px -5px 6px #f6f6f6;
 }
 
 .card-image2 {
-  min-height: 270px;
-  border-radius: 20px;
-  min-width: 35rem;
+  padding: 1rem;
+  height: 18rem;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
   background-color: #c9c9c9;
-  border-radius: 15px;
-  box-shadow: inset 8px 8px 10px #c3c3c3,
-            inset -8px -8px 10px #cfcfcf;
+  box-shadow: inset 8px 8px 10px #c3c3c3, inset -8px -8px 10px #cfcfcf;
+}
+
+.webinars-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.webinar-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.webinar-content {
+  width: 90%;
+  padding: 0.7rem 1rem;
+  text-align: start;
+
+}
+
+.webinar-title {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .card2 {
+    max-width: 20rem;
+  }
+
+  .card-image2 {
+    max-width: 15rem;
+    
+  }
+
+  .webinar-content {
+    padding: 0.7rem 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card2 {
+    max-width: 25rem;
+  }
+
+  .card-image2 {
+    max-width: 30rem;
+  }
+}
+
+
+.video-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+}
+
+.card3 {
+  width: 38rem;
+  max-width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-image3 {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+}
+
+.video-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media (max-width: 767px) {
+  .card3 {
+    width: 290px;
+  }
+}
+
+@media (min-width: 768px) {
+  .webinar-card {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .webinar-content {
+    max-width: none;
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .card2 {
+    width: 100%;
+    max-width: 32rem;
+  }
+
+  .card-image2 {
+    width: 100%;
+    max-width: 30rem;
+  }
 }

@@ -1,41 +1,88 @@
 .time-grid-selector {
-    display: flex;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+}
+
+.calendar-container {
+  margin-right: 30px;  
+}
+
+.react-calendar {
+  width: 500px;  
+}
+
+.react-calendar__tile--now {
+  background: #ffff76 !important;
+}
+
+.react-calendar__tile--active {
+  background: #006edc !important;
+  color: white;
+}
+
+.time-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 500px;
+  gap: 10px;
+  min-height: 264px;
+}
+
+.time-slot {
+  font:inherit;
+  font-size: 0.833rem;
+  border: .5px solid black;
+  border-radius: 20px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.time-slot.selected {
+  background-color: rgba(27, 198, 255, 0.9);
+  border-color: none;
+  color: #ffffff;
+}
+
+.time-slot:disabled {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .input-field {
+      width: calc(50% - 10px);
+      margin-right: 20px;
   }
-  
+}
+
+@media screen and (min-width: 1024px) {
+  .input-field {
+      width: calc(33.33% - 10px);
+  }
+}
+
+
+@media screen and (max-width: 1025px) {
+  .time-grid-selector {
+    flex-direction: column;
+    align-items: center;
+  }
   .calendar-container {
-    margin-right: 30px;  
+    margin-right: 0;  
   }
-  .react-calendar
-  {
-    width: 500px; 
+  .react-calendar {
+    width: var(--calendar-width); 
   }
-  
   .time-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 500px;
-    gap: 10px;
-    min-height: 264px;
+    width: var(--calendar-width); 
   }
-  
-  .time-slot {
-    font:inherit;
-    font-size: 0.833rem;
-    border: 1px solid greenyellow;
-    border-radius: 20px;
-    background-color: white;
-    cursor: pointer;
-  }
-  
-  .time-slot.selected {
-    background-color: rgba(27, 198, 255, 0.9);
-    border-color: none;
-    color: #ffffff;
-  }
-  
-  .time-slot:disabled {
-    background-color: #f0f0f0;
-    cursor: not-allowed;
-  }
-  
+}

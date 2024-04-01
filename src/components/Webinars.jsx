@@ -1,6 +1,5 @@
 import React from "react";
 import AnimatedTitle from "./AnimTitle";
-
 import PropTypes from "prop-types";
 import { Box } from "@mui/material";
 
@@ -10,61 +9,29 @@ function Webinars({ webinars }) {
       <div className="heading" style={{ margin: "2rem" }}>
         <AnimatedTitle name="Webinars "></AnimatedTitle>
       </div>
-      <div
-        style={{
-          display: "flex",
-          flexWrap:"wrap",
-        }}
-      >
-      {webinars.map((webinar, index) => (
-        <div className="flex flex-wrap justify-center" key={index}>
-          <div className="">
+      <div className="webinars-container">
+        {webinars.map((webinar, index) => (
+          <div className="webinar-card" key={index}>
             <div className="card2">
               <div className="card-image2">
-                <img
-                  src={webinar.image}
-                  alt="Webinar Image"
-                  style={{
-                    objectFit: "contain", 
-                  }}
-                />
+                <img src={webinar.image} alt="Webinar Image" style={{ objectFit: "contain" }} />
               </div>
             </div>
-          </div>
-          <div className="w-screen">
-            <div
-              style={{
-                display:"flex",
-                flexDirection:"column",
-                fontSize: "1rem",
-                fontWeight: "200",
-                textAlign: "start",
-                padding: "0.7rem 2rem", // Add left padding for spacing between image and text
-              }}
-            >
-              <div className="heading">
+            <div className="webinar-content">
+              <div className="webinar-title">
                 <AnimatedTitle name={webinar.title}></AnimatedTitle>
                 <h3>{webinar.subHeading}</h3>
               </div>
-              
-              {webinar.description.map((desc, index) => (
-                <li
-                  key={index}
-                  style={{
-                    fontSize: "1.2rem",
-                    margin: "1rem",
-                    padding:"0 0.4rem",
-                    textTransform: "revert",
-                    listStyle: "outside",
-                  }}
-                >
-                  {desc}
-                </li>
-              ))}
+              <ul className="webinar-description">
+                {webinar.description.map((desc, index) => (
+                  <li key={index} style={{ fontSize: "1.2rem", textTransform: "revert", listStyle: "outside" }}>
+                    {desc}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
       </div>
     </>
   );
