@@ -161,7 +161,6 @@ const MentProf = ({ data, services, addOns }) => {
             </span>
           </div>
         ))}
-
         <h3 className="text-xl font-bold mb-4 mt-8">Add-Ons</h3>
         {addOns.map((addOn) => (
           <div key={addOn.name} className="mb-4 flex items-center">
@@ -184,24 +183,17 @@ const MentProf = ({ data, services, addOns }) => {
             </span>
           </div>
         ))}
-        
-        <Link
-          to= "/checkout"
-            state= {{ selectedItems: getSelectedItems() }}
-          
-          className="bg-orange-500 text-white font-bold py-2 px-4 rounded-lg mt-8 inline-block"
-        >
-          Proceed To Checkout
-        </Link>
-
-        <div>
-          <h3>Selected Items:</h3>
-          <ul>
-            {getSelectedItems().map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
-        </div>
+        {/* // Inside the return statement of the MentProf component */}
+        {getSelectedItems().length > 0 &&
+          !getSelectedItems().includes("none") && (
+            <Link
+              to="/checkout"
+              state={{ selectedItems: getSelectedItems() }}
+              className="bg-orange-500 text-white font-bold py-2 px-4 rounded-lg mt-8 inline-block"
+            >
+              Proceed To Checkout
+            </Link>
+          )}
       </div>
     </div>
   );

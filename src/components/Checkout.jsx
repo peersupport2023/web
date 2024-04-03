@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import "./TimeGridSelector.css";
+import { useLocation } from "react-router-dom";
 
 const Checkout = () => {
   const [selectedDate, setSelectedDate] = useState(new Date());
@@ -20,6 +21,9 @@ const Checkout = () => {
     applicationForm: null,
     fresherOrWorkEx: "",
   });
+
+  const location = useLocation()
+  console.log(location.state?.selectedItems)
 
   console.log(selectedDate);
   console.log(selectedTime);
